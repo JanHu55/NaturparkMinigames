@@ -1,0 +1,50 @@
+[
+    {
+        "text": "Biber",
+        "column": "four"
+    },
+    {
+        "text": "Bachforelle",
+        "column": "one"
+    },
+    {
+        "text": "Seesaibling",
+        "column": "one"
+    },
+    {
+        "text": "Elritze",
+        "column": "one"
+    },
+    {
+        "text": "Otter",
+        "column": "four"
+    },
+
+    {
+        "text": "Frosch",
+        "column": "two"
+    },
+    {
+        "text": "Kröte",
+        "column": "two"
+    },
+    {
+        "text": "Salamander",
+        "column": "two"
+    },
+
+        {
+        "text": "Ente",
+        "column": "three"
+    },
+    {
+        "text": "Haubentaucher",
+        "column": "three"
+    },
+    {
+        "text": "Graugans",
+        "column": "three"
+    }
+    
+
+]
