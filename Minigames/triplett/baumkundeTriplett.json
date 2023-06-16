@@ -1,6 +1,6 @@
 [
     {
-        "src": "images/baumkunde/Bild1.jpg",
+        "src": "images/baumkunde/Triplett_Birke.jpg",
         "text": "Birke",
         "src2": "images/baumkunde/Bild2.png"
     },
@@ -20,13 +20,13 @@
         "src2": "images/baumkunde/Bild13.jpg"
     },
     {
-        "src": "images/baumkunde/Bild5.jpg",
+        "src": "images/baumkunde/Triplett_Tanne.jpg",
         "text": "Tanne",
         "src2": "images/baumkunde/Bild14.jpg"
     },
     {
         "src": "images/baumkunde/Bild4.jpg",
         "text": "Fichte",
-        "src2": "images/baumkunde/Bild15.png"
+        "src2": "images/baumkunde/Triplett_Fichtenzapfen.png"
     }
 ]
