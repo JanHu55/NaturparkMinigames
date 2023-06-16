@@ -1,0 +1,50 @@
+[
+    {
+        "text": "Elefant",
+        "column": "two"
+    },
+    {
+        "text": "Fuchs",
+        "column": "two"
+    },
+    {
+        "text": "Gans",
+        "column": "one"
+    },
+    {
+        "text": "Huhn",
+        "column": "one"
+    },
+    {
+        "text": "Löwe",
+        "column": "two"
+    },
+
+    {
+        "text": "Pinguin",
+        "column": "two"
+    },
+    {
+        "text": "Reh",
+        "column": "two"
+    },
+    {
+        "text": "Rind",
+        "column": "one"
+    },
+
+        {
+        "text": "Schaf",
+        "column": "one"
+    },
+    {
+        "text": "Schwein",
+        "column": "one"
+    },
+    {
+        "text": "Ziege",
+        "column": "one"
+    }
+    
+
+]
