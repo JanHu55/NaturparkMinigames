@@ -1,0 +1,26 @@
+[
+  {
+    "question": "die Klasse von Jorim und Selina sind im Naturpark. Jorim schmeisst sein Papier von seinen Schokoriegel auf den Boden und selina sagt: Hey das darfst du nicht. Was meinst du hat Selina recht?",
+    "booleanOfQuestion": true,
+    "commentIfRight": "Selina hat recht, Papier verschmutzt die Umwelt, wenn es in den Wald geworfen wird. Dies kann Auswirkungen auf Waldtiere und Pflanzen haben. Tiere, die Müll fressen, können krank oder sogar tödlich sein. Außerdem kann der Müll den Boden verschmutzen und das Pflanzenwachstum erschweren.",
+    "commentIfFalse": "Leider verhalten sich Jorim und du Falsch, den die Umwelt wird verschmutzt, wenn wir Papier in den Wald werfen. Dies kann die Gesundheit von Wildtieren und Pflanzen im Wald beeinträchtigen. Tiere können durch das Fressen von Müll krank oder sogar tödlich werden. Außerdem kann der Müll den Boden verschmutzen und das Pflanzenwachstum behindern. Deswegen sollten wir nie unseren Müll in den Wald schmeissen.  "
+  },
+  {
+    "question": "Justin und Samauel füttern die Tiere im Naturpark mit ihrem Vesper. Frau Ahmadi Verwahnt dei beiden da dies nicht gut für die Tiere ist. Hat Frau Ahmadi Recht? ",
+    "booleanOfQuestion": true,
+    "commentIfRight": "Ja, Frau Ahmadi hat Recht mit ihrer Aussage, Tiere im Naturpark haben die Möglichkeit, ihre natürlichen Nahrungsquellen zu finden und zu nutzen. Wir stören ihre natürlichen Essgewohnheiten, wenn wir ihnen zusätzliches Futter geben. Dies kann dazu führen, dass sie sich auf unsere Nahrungsmittel verlassen und ihre natürlichen Instinkte zum Jagen oder Sammeln verlieren.",
+    "commentIfFalse": "Leider verhaltet ihr euch Flasch. Im Naturpark haben Tiere die Chance, ihre natürlichen Nahrungsquellen zu entdecken und zu nutzen. Wenn wir ihnen zusätzliches Futter geben, stören wir ihre natürlichen Essgewohnheiten. Dies kann dazu führen, dass sie ihre natürlichen Instinkte zum Jagen oder Sammeln verlieren und sich auf unsere Nahrungsmittel verlassen."
+  },
+  {
+    "question": "Jean und Ivan sehen den tollen Feldsee und bei 30 Grad wollen sie sich abkühlen. Li aus ihrer Klasse stopt sie und sagt: es ist nicht erlaubt, im Feldsee zu schwimmen. Hat Li recht? ",
+    "booleanOfQuestion": true,
+    "commentIfRight": "jap, das stimmt Li und du habt recht. Man darf nicht im Fledsee schwimmen, da dort Spieziele Wasserpflanzen gedeihen und unter Naturschutz stehen, wie zum Beispiel der stachelsporige Brachsenkarut. Dadurch, dass wir im Wasser schwimmen können, dinge wie Sonnencream den Pflanzen schaden. ",
+    "commentIfFalse": "Leider hat ihr einen Fehler gemacht. Es ist untersagt, im Fledsee zu schwimmen, da in diesem Gebiet Wasserpflanzen wachsen und unter Naturschutz stehen, wie der stachelsporige Brachsenkarut. Da wir im Wasser schwimmen können, schaden Dinge wie Sonnencreme den Pflanzen. "
+  },
+  {
+    "question": "Isabella und Aisha unterhalten sich extrem laut im Wald und schreien herum. Verhalten die beiden sich richtig? ",
+    "booleanOfQuestion": false,
+    "commentIfRight": "Du hast völlig Recht. Isabella und Aisha verhalten sich im Naturpark unangemessen. Die Ruhe und den Frieden der Natur können durch Lautstärke beeinträchtigt werden. Lautes Geräusch kann Tiere im Naturpark erschrecken oder ihnen schaden. Wildtiere können insbesondere gestört werden und sich zurückziehen, was die Beobachtung schwieriger macht.",
+    "commentIfFalse": " Leider liegt ihr nicht richtig. Lautstärke kann die Ruhe und den Frieden der Natur beeinträchtigen. Lautes Geräusch kann Tiere im Naturpark erschrecken oder ihr Verhalten beeinträchtigen. Wildtiere können insbesondere gestört und sich zurückziehen, was es schwieriger macht, sie zu beobachten."
+  }
+]
