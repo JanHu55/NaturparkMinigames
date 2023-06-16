@@ -1,0 +1,91 @@
+[
+    {
+        "text": "Ananas",
+        "column": "two"
+    },
+    {
+        "text": "Apfel",
+        "column": "one"
+    },
+    {
+        "text": "Avocado",
+        "column": "two"
+    },
+    {
+        "text": "Banane",
+        "column": "two"
+    },
+    {
+        "text": "Birne",
+        "column": "one"
+    },
+
+    {
+        "text": "Granatapfel",
+        "column": "two"
+    },
+    {
+        "text": "Gurke",
+        "column": "one"
+    },
+    {
+        "text": "Himbeere",
+        "column": "one"
+    },
+
+        {
+        "text": "Kirsche",
+        "column": "one"
+    },
+    {
+        "text": "Kiwi",
+        "column": "two"
+    },
+    {
+        "text": "Kokosnuss",
+        "column": "two"
+    },
+    {
+        "text": "Kürbis",
+        "column": "one"
+    },
+    {
+        "text": "Lauch",
+        "column": "one"
+    },
+    {
+        "text": "Mais",
+        "column": "one"
+    },
+    {
+        "text": "Mango",
+        "column": "two"
+    },
+    {
+        "text": "Melone",
+        "column": "two"
+    },
+
+    {
+        "text": "Möhre",
+        "column": "one"
+    },
+    {
+        "text": "Orange",
+        "column": "two"
+    },
+    {
+        "text": "Pflaume",
+        "column": "one"
+    },
+
+        {
+        "text": "Zitrone",
+        "column": "two"
+    },
+    {
+        "text": "Zucchini",
+        "column": "one"
+    }   
+
+]
