@@ -23,7 +23,8 @@ function getElementAfter(container, x) {
 }
 
 let lists = Array.from(document.querySelectorAll(".list"));
-let titleDivs = Array.from(document.querySelectorAll(".list-head"));
+// let titleDivs = Array.from(document.querySelectorAll(".list-head"));
+let listDivs = document.querySelector(".lists");
 
 
 let jsonFile1 = new URLSearchParams(window.location.search).get("json1");
@@ -55,23 +56,43 @@ async function getData(_url1, _url2) {
 	for (let i = 0; i < data2.length; i++) {
 
 		let h2 = document.createElement("h2");
+		let columnDivs = document.createElement("div");
+		columnDivs.setAttribute("class", "list " + "list-" + (i + 1))
+		// columnDivs.setAttribute("class", "list-" + (i + 1));
+		let titleDivs = document.createElement("div");
+		titleDivs.setAttribute("class", "list-head");
+
+		columnDivs.addEventListener("dragover", (e) => {
+			e.preventDefault();
+			const elementAfter = getElementAfter(columnDivs, e.clientX);
+			const element = document.querySelector('.dragging');
+			if (elementAfter == null) {
+				columnDivs.append(element);
+			} else {
+				columnDivs.insertBefore(element, elementAfter);
+			}
+		});
+
 		h2.innerHTML = data2[i].title;
-		titleDivs[i+1].appendChild(h2);
+		titleDivs.appendChild(h2);
+		columnDivs.appendChild(titleDivs);
+		listDivs.appendChild(columnDivs);
 
 	}
 
 	addTouch(list_items);
 }
 
-console.log("List Items: " + list_items);
-
+// console.log("List Items: " + list_items);
 
 function addTouch(list_items) {
 	list_items.forEach((list_items) => {
 
 		list_items.draggable = "true";
-
+		
 		function touchmove(e) {
+			let lists = Array.from(document.querySelectorAll(".list"));
+
 			let box1 = lists[0].getBoundingClientRect();
 			let box2 = lists[1].getBoundingClientRect();
 			let box3 = lists[2].getBoundingClientRect();
@@ -161,18 +182,18 @@ function addTouch(list_items) {
 }
 
 
-lists.forEach((lists) => {
-	lists.addEventListener("dragover", (e) => {
-		e.preventDefault();
-		const elementAfter = getElementAfter(lists, e.clientX);
-		const element = document.querySelector('.dragging');
-		if (elementAfter == null) {
-			lists.append(element);
-		} else {
-			lists.insertBefore(element, elementAfter);
-		}
-	});
-});
+// lists.forEach((lists) => {
+// 	lists.addEventListener("dragover", (e) => {
+// 		e.preventDefault();
+// 		const elementAfter = getElementAfter(lists, e.clientX);
+// 		const element = document.querySelector('.dragging');
+// 		if (elementAfter == null) {
+// 			lists.append(element);
+// 		} else {
+// 			lists.insertBefore(element, elementAfter);
+// 		}
+// 	});
+// });
 
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36

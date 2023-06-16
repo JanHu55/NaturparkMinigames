@@ -134,43 +134,43 @@ h2 {
 	margin: 4px 0px 4px 4px;
 }
 
-.list-one .two {
+.list-1 .two {
 	background-color: var(--wrong);
 }
-.list-one .three {
+.list-1 .three {
 	background-color: var(--wrong);
 }
-.list-one .four {
-	background-color: var(--wrong);
-}
-
-.list-two .one {
-	background-color: var(--wrong);
-}
-.list-two .three {
-	background-color: var(--wrong);
-}
-.list-two .four {
+.list-1 .four {
 	background-color: var(--wrong);
 }
 
-.list-three .one {
+.list-2 .one {
 	background-color: var(--wrong);
 }
-.list-three .two {
+.list-2 .three {
 	background-color: var(--wrong);
 }
-.list-three .four {
+.list-2 .four {
 	background-color: var(--wrong);
 }
 
-.list-four .one {
+.list-3 .one {
 	background-color: var(--wrong);
 }
-.list-four .two {
+.list-3 .two {
 	background-color: var(--wrong);
 }
-.list-four .three {
+.list-3 .four {
+	background-color: var(--wrong);
+}
+
+.list-4 .one {
+	background-color: var(--wrong);
+}
+.list-4 .two {
+	background-color: var(--wrong);
+}
+.list-4 .three {
 	background-color: var(--wrong);
 }
 
