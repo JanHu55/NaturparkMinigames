@@ -8,7 +8,7 @@ let multipleChoiceOK: HTMLButtonElement = <HTMLButtonElement>document.getElement
 let dragNDrop: HTMLButtonElement = <HTMLButtonElement>document.getElementById("dragNDrop");
 
 
-lueckentext.addEventListener("click", () => { window.open("../Lueckentext/lueckentext.html?json=dataLuecken.json", "_self") });
+lueckentext.addEventListener("click", () => { window.open("../Lueckentext/lueckentext.html?json=bioBauernhofLueckentext.json", "_self") });
 memory.addEventListener("click", () => { window.open("../Memory/memory.html?json=baumkundeMemory.json", "_self") });
 triplett.addEventListener("click", () => { window.open("../triplett/triplett.html?json=baumkundeTriplett.json", "_self") });
 zuordnungAudio.addEventListener("click", () => { window.open("../AudioZuordnen/audioZuordnen.html?jsonAudio=voegelAudio.json&jsonBilder=voegelBilder.json", "_self") });
