@@ -1,0 +1,32 @@
+[
+    {
+        "src": "sounds/Thema_02/Gans.mp3",
+        "pairID": "1",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_02/Huhn.mp3",
+        "pairID": "2",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_02/Rind.mp3",
+        "pairID": "3",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_02/Schaf.mp3",
+        "pairID": "4",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_02/Schwein.mp3",
+        "pairID": "5",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_02/Ziege.wav",
+        "pairID": "6",
+        "type": "audio/mpeg"
+    }
+]
