@@ -1,0 +1,33 @@
+[
+    {
+        "src": "images/Thema_02/Gans.jpg",
+        "pairID": "1",
+        "name": "Gans"
+    },
+    {
+        "src": "images/Thema_02/Huhn.jpg",
+        "pairID": "2",
+        "name": "Huhn"
+
+    },
+    {
+        "src": "images/Thema_02/Rind.jpg",
+        "pairID": "3",
+        "name": "Rind"
+    },
+    {
+        "src": "images/Thema_02/Schaf.jpg",
+        "pairID": "4",
+        "name": "Schaf"
+    },
+    {
+        "src": "images/Thema_02/Schwein.jpg",
+        "pairID": "5",
+        "name": "Schwein"
+    },
+    {
+        "src": "images/Thema_02/Ziege.jpg",
+        "pairID": "6",
+        "name": "Ziege"
+    }
+]
