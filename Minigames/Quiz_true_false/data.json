@@ -1,4 +1,4 @@
-[
+e [
     {
         "question": "Wenn ich im Wald eine schöne Pflanze entdecke, darf ich sie abreißen und mit nach Hause nehmen.",
         "booleanOfQuestion": false,
@@ -8,7 +8,7 @@
     {
         "question": "Wenn möglich, sollte ich im Wald auf den gekennzeichneten Wegen bleiben.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Super, gut gemacht!",
+        "commentIfRight": "Super, gut gemacht! So erschreckst du nicht die heimischen Tiere und zertrittst keine Pflanzen.",
         "commentIfFalse": "Es ist wichtig auf den gekennzeichneten Wegen zu bleiben, um nicht zu sehr in den natürlichen Lebensraum der heimischen Tiere und Pflanzen einzugreifen oder etwas kaputt zu machen."
     },
     {
@@ -20,7 +20,7 @@
     {
         "question": "Wenn ich ein Tier sehe, kann ich versuchen es zu streicheln.",
         "booleanOfQuestion": false,
-        "commentIfRight": "Richtige Antwort!",
+        "commentIfRight": "Richtige Antwort! Die Tiere im Wald sollten in Ruhe gelassen werden.",
         "commentIfFalse": "Um die Tiere in der Natur zu schützen, halte bitte Abstand zu ihnen und verhalte dich leise und unauffällig. "
     },
     {
@@ -30,15 +30,15 @@
         "commentIfFalse": "Um Pisten zu bauen, werden oft viele Bäume gefällt. Das zerstört den Lebensraum vieler Tiere und Pflanzen. Außerdem kommt es in diesen Gebieten häufiger zu Erdrutschen und Lawinen."
     },
     {
-        "question": "Viele Menschen gehen im Winter gerne Skifahren. Es gibt Menschen, die durch die Touristen und Touristinnen Geld verdienen.",
+        "question": "Viele Menschen gehen im Winter gerne Skifahren. Es gibt Menschen, die durch die Touristinnen und Touristen Geld verdienen.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Korrekt!",
+        "commentIfRight": "Korrekt! Viele Menschen die in Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe.",
         "commentIfFalse": "Viele Menschen die in Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe."
     },
     {
         "question": "Skifahren und das Anlegen von Pisten schadet den Pflanzen und Tieren des Waldes nicht, weil sich die Psiten außerhalb des natürlichen Lebensraums von Pflanzen und Tieren befinden.",
         "booleanOfQuestion": false,
-        "commentIfRight": "Korrekt!",
+        "commentIfRight": "Korrekt! Ski-Pisten müssen erst gebaut werden, das zerstört den Lebensraum vieler Tiere und Pflanzen.",
         "commentIfFalse": "Skipisten befinden sich oft in den natürlichen Lebensräumen von Tieren wie Rehe, Hasen, Füchse und heimische Vogelarten. Außerdem werden durch das Anlegen von Skipisten heimische Pflanzen vernichtet. "
     }
 ]
