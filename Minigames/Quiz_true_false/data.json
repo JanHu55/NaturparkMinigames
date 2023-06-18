@@ -30,15 +30,15 @@
         "commentIfFalse": "Um Pisten zu bauen, werden oft viele Bäume gefällt. Das zerstört den Lebensraum vieler Tiere und Pflanzen. Außerdem kommt es in diesen Gebieten häufiger zu Erdrutschen und Lawinen."
     },
     {
-        "question": "Viele Menschen gehen im Winter gerne Skifahren. Es gibt Menschen, die durch die Touristinnen und Touristen Geld verdienen.",
+        "question": "Viele Menschen gehen im Winter gerne Skifahren. Es gibt viele Menschen, die durch die Touristinnen und Touristen Geld verdienen.",
         "booleanOfQuestion": true,
         "commentIfRight": "Korrekt! Viele Menschen die in Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe.",
         "commentIfFalse": "Viele Menschen die in Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe."
     },
     {
-        "question": "Skifahren und das Anlegen von Pisten schadet den Pflanzen und Tieren des Waldes nicht, weil sich die Psiten außerhalb des natürlichen Lebensraums von Pflanzen und Tieren befinden.",
+        "question": "Skifahren und das Anlegen von Pisten schadet den Pflanzen und Tieren des Waldes nicht, weil sich die Pisten außerhalb des natürlichen Lebensraums von Pflanzen und Tieren befinden.",
         "booleanOfQuestion": false,
         "commentIfRight": "Korrekt! Ski-Pisten müssen erst gebaut werden, das zerstört den Lebensraum vieler Tiere und Pflanzen.",
-        "commentIfFalse": "Skipisten befinden sich oft in den natürlichen Lebensräumen von Tieren wie Rehe, Hasen, Füchse und heimische Vogelarten. Außerdem werden durch das Anlegen von Skipisten heimische Pflanzen vernichtet. "
+        "commentIfFalse": "Ski-Pisten befinden sich oft in den natürlichen Lebensräumen von Tieren wie Rehe, Hasen, Füchse und heimische Vogelarten. Außerdem werden durch das Anlegen von Ski-Pisten heimische Pflanzen vernichtet. "
     }
 ]
