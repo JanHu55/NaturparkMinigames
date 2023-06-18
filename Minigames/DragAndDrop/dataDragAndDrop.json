@@ -1,6 +1,6 @@
 [
     {
-        "text": "Pilze",
+        "text": "Pilze sammeln",
         "column": "two"
     },
     {
@@ -9,36 +9,30 @@
     },
     {
         "text": "Reiten",
-        "column": "two"
+        "column": "three"
     },
     {
         "text": "Wandern",
         "column": "three"
     },
     {
-        "text": "Christbaum",
+        "text": "Christbaum schlagen",
         "column": "two"
     },
-
     {
-        "text": "Jogging",
+        "text": "Joggen",
         "column": "three"
     },
     {
         "text": "Jagd",
         "column": "two"
     },
-    {
-        "text": "Sonntagsausflug",
-        "column": "three"
-    },
-
         {
         "text": "Hochwasser",
         "column": "one"
     },
     {
-        "text": "Mountainbiking",
+        "text": "Mountainbike fahren",
         "column": "three"
     },
     {
@@ -46,16 +40,8 @@
         "column": "two"
     },
     {
-        "text": "Stille erleben",
-        "column": "three"
-    },
-    {
-        "text": "Papier",
+        "text": "Papier herstellen",
         "column": "two"
-    },
-    {
-        "text": "Urlaub",
-        "column": "three"
     },
     {
         "text": "Möbel",
@@ -66,7 +52,7 @@
         "column": "three"
     },
     {
-        "text": "Beeren",
+        "text": "Beeren sammeln",
         "column": "two"
     },
     {
@@ -74,36 +60,16 @@
         "column": "one"
     },
     {
-        "text": "Lebensraum",
+        "text": "Artenvielfalt erhalten",
         "column": "four"
     },
     {
-        "text": "Staub",
-        "column": "one"
-    },
-    {
-        "text": "Artenvielfalt",
-        "column": "four"
-    },
-    {
-        "text": "Naturschutzgebiet",
-        "column": "four"
-    },
-    {
-        "text": "Orkan",
-        "column": "one"
-    },
-    {
-        "text": "Sauerstoffproduktion",
+        "text": "Naturschutzgebiete ausweisen",
         "column": "four"
     },
     {
         "text": "Lärm",
         "column": "one"
-    },
-    {
-        "text": "ökologisches Gleichgewicht",
-        "column": "four"
     },
     {
         "text": "Brennholz",
@@ -118,11 +84,11 @@
         "column": "one"
     },
     {
-        "text": "Biotope",
+        "text": "Biotope schützen",
         "column": "four"
     },
     {
-        "text": "Trinkwasser",
+        "text": "Regenwasser filtern",
         "column": "two"
     }
 
