@@ -1,53 +1,79 @@
 [
     {
-      "question": "Ein Entnahmebaum...",
+      "question": "Wenn Bäume kein Wasser mehr in Baumspitzen transportieren können...",
       "answers": [
-            { "text": "soll nicht gefällt werden", "correct": false
+            { "text": "bildet er eine dickere Rinde.", "correct": false
             },
-            { "text": "ist Erntereif", "correct": false
+            { "text": "ist er erntereif.", "correct": false
             },
-            { "text": "soll bei der nächsten Durchforstungsmaßnahme gefällt werden", "correct": true
+            { "text": "hört er auf zu wachsen.", "correct": true
             },
-            { "text": "steht am Rand einer Fahrgasse", "correct": false
+            { "text": "verfärben sich die Blätter bunt.", "correct": false
             }
         ]
     },
     {
-      "question": "Ein Gassenrandbaum...",
+      "question": "Das Wurzelsystem, bei der die Wurzel bis tief in die Erde reicht,  wie bei einer Tanne, heißt:",
       "answers": [
-            { "text": "ist das Zuhause von Eichhörnchen", "correct": false
+            { "text": "Pfahlwurzel-System", "correct": true
             },
-            { "text": "verbindet zwei Baumgassen miteinander", "correct": false
+            { "text": "Bohrwurzel-System", "correct": false
             },
-            { "text": "darf nur parallel gefällt werden", "correct": false
+            { "text": "Flachwurzel-System", "correct": false
             },
-            { "text": "gibt vor wo eine Forstmaschine im Wald fahren darf", "correct": true
+            { "text": "Schneckenwurzel-System", "correct": false
             }
         ]
     },
     {
-      "question": "Ein Habitatbaum...",
+      "question": "Was bedeutet, dass Wälder bewirtschaftet werden?",
       "answers": [
-            { "text": "hat eine hohe Bedeutung für die Artenvielfalt", "correct": true
+            { "text": "Holz wird geerntet und dafür werden neue Bäume gepflanzt.", "correct": true
             },
-            { "text": "sollte nur im Zick-Zack Schnitt gefällt werden", "correct": false
+            { "text": "Es wird eine Gastwirtschaft im Wald gebaut.", "correct": false
             },
-            { "text": "ist von Holzwürmern befallen", "correct": false
+            { "text": "Es gibt einen Kletterwald.", "correct": false
             },
-            { "text": "ist ein besonders schief gewachsener Baum", "correct": false
+            { "text": "Hier sind Pfadfinder aktiv.", "correct": false
+            }
+        ]
+    },
+   {
+      "question": "Was bedeutet Naturverjüngung?",
+      "answers": [
+            { "text": "Der Förster des Waldes darf nicht älter als 25 Jahre alt sein.", "correct": false
+            },
+            { "text": "Die Bäume im Wald sorgen mit ihren Samen selbst für junge Bäume.", "correct": true
+            },
+            { "text": "Es gibt einen Waldkindergarten.", "correct": false
+            },
+            { "text": "Alle Bäume im Wald sind unter 10 Jahre alt.", "correct": false
+            }
+        ]
+    },
+   {
+      "question": "Was ist ein Harvester?",
+      "answers": [
+            { "text": "Eine Süßspeise aus Waldfrüchte.", "correct": false
+            },
+            { "text": "Eine Baumart.", "correct": false
+            },
+            { "text": "Eine Erntemaschine.", "correct": true
+            },
+            { "text": "Eine Bienenart, die im Wald lebt.", "correct": false
             }
         ]
     },
     {
-      "question": "Ein Zukunftsbaum...",
+      "question": "Was bedeutet Aufforsten?",
       "answers": [
-            { "text": "gibt vor, wie jeder Baum in 10 Jahren aussieht", "correct": false
+            { "text": "Das ist ein anderes Wort für Demonstrieren im Wald.", "correct": false
             },
-            { "text": "ist ein genetisch veränderter Baum", "correct": false
+            { "text": "Gefällte Bäume werden aufeinander gestapelt.", "correct": false
             },
-            { "text": "ist schon älter als 300 Jahre", "correct": false
+            { "text": "So begrüßen sich Förster gegenseitig.", "correct": false
             },
-            { "text": "gehört zu den wertvollsten Bäumen im Bestand", "correct": true
+            { "text": "Neue Bäume werden im Wald nachgepflanzt.", "correct": true
             }
         ]
     }
