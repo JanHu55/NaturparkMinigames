@@ -87,12 +87,11 @@ namespace QuizTrueFalse {
         console.log(item);
         if (_item.booleanOfQuestion == _correct) {
             trueFalse.innerHTML = "Korrekt";
-            // answer.innerHTML = _item.commentIfRight;
+            answer.innerHTML = _item.commentIfRight;
         } else {
             trueFalse.innerHTML = "Leider falsch";
             answer.innerHTML = _item.commentIfFalse;
         }
-
     }
 
     // Get the modal
