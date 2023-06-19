@@ -13,7 +13,7 @@
         ]
     },
     {
-      "question": "Das Wurzelsystem, bei der die Wurzel bis tief in die Erde reicht,  wie bei einer Tanne, heißt:",
+      "question": "Das Wurzelsystem, bei der die Wurzel bis tief in die Erde reicht, wie bei einer Tanne, heißt:",
       "answers": [
             { "text": "Pfahlwurzel-System", "correct": true
             },
@@ -39,7 +39,7 @@
         ]
     },
    {
-      "question": "Was bedeutet Naturverjüngung?",
+      "question": "Was bedeutet \"Naturverjüngung\"?",
       "answers": [
             { "text": "Der Förster des Waldes darf nicht älter als 25 Jahre alt sein.", "correct": false
             },
@@ -65,7 +65,7 @@
         ]
     },
     {
-      "question": "Was bedeutet Aufforsten?",
+      "question": "Was bedeutet \"Aufforsten\"?",
       "answers": [
             { "text": "Das ist ein anderes Wort für Demonstrieren im Wald.", "correct": false
             },
