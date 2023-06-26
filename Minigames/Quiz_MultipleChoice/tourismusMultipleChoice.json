@@ -1,0 +1,41 @@
+[
+    {
+      "question": "Was sind die Vorteile von Tourismus?",
+      "answers": [
+            { "text": "ermöglicht Reisen", "correct": true
+            },
+            { "text": "ist kostenlos", "correct": false
+            },
+            { "text": "bringt Geld ein", "correct": true
+            },
+            { "text": "schadet nie der Umwelt", "correct": false
+            }
+        ]
+    },
+    {
+      "question": "In welchen Bereichen bringt Tourismus Geld ein?",
+      "answers": [
+            { "text": "Restaurants", "correct": true
+            },
+            { "text": "Hotels", "correct": true
+            },
+            { "text": "Wandern", "correct": false
+            },
+            { "text": "Museen", "correct": true
+            }
+        ]
+    },
+    {
+      "question": "So reise ich rücksichtsvoll:",
+      "answers": [
+            { "text": "Ich lasse keinen Müll liegen.", "correct": true
+            },
+            { "text": "Ich zelte wild.", "correct": false
+            },
+            { "text": "Ich bleibe in Naturschutzgebieten auf den Wegen.", "correct": true
+            },
+            { "text": "Ich halte mich an die Regeln vor Ort.", "correct": true
+            }
+        ]
+    }
+]
