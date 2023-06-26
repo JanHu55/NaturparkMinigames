@@ -3,7 +3,7 @@
         "question": "Tatjan meint: Wasser ist für uns Menschen nicht so wichtig. Was meinst du hat Tatjana recht?",
         "booleanOfQuestion": false,
         "commentIfRight": "du hast recht, Tatjan liegt mit ihrer Aussage Falsch. Wasser ist für Menschen essenziel wichtig un wir brauchen es zum Überleben. ",
-        "commentIfFalse": "Leider liegen du und Tatjan Flasch. Wir Menschen Brauchen Wasser als einen der wichsten bestandteile unserers lebens."
+        "commentIfFalse": "Leider liegen du und Tatjan falsch. Wir Menschen brauchen Wasser als einen der wichsten Bestandteile unserers Lebens."
     },
     {
         "question": "Tatjana hat sich mit Ali zusammen getan und sich nochmals über Wasser Infomiert. Sie sagen: Wir Menschen sollten jeden Tag ungefähr 2 bis 2,5 Liter Wasser trinken. Haben die beiden Recht?",
@@ -15,13 +15,13 @@
         "question": "Thaisa und Alex haben in einem Artikel gelesen das man im Sommer mehr als 2 liter Trinken muss. Stimmt das?",
         "booleanOfQuestion": true,
         "commentIfRight": "Ja, der Artikel hat recht. Es ist besonders wichtig, im Sommer mehr Flüssigkeit zu trinken. Bei warmen Temperaturen schwitzen wir mehr und verlieren dadurch mehr Flüssigkeit.",
-        "commentIfFalse": "Leider Liegts du Flasch. Im Sommer ist es wichtig mehr Wasser zu trinken. Bei warmen Temperaturen schwitzen wir viel mehr, wodurch wir mehr Flüssigkeit verlieren. Deswegen immer genügend Trinken"
+        "commentIfFalse": "Leider Liegts du falsch. Im Sommer ist es wichtig mehr Wasser zu trinken. Bei warmen Temperaturen schwitzen wir viel mehr, wodurch wir mehr Flüssigkeit verlieren. Deswegen immer genügend Trinken"
     },
     {
         "question": "Die Klasse von Tatjana, Thaisa, Ali und Alex überlegen sich wie viel Wasser sie täglich verbraucher. Sie kommen auf dem Entschluss, dass es mindestens 65 Liter am Tag sind, glaubst du das stimmt.",
         "booleanOfQuestion": false,
         "commentIfRight": "jap du hast, wir brauchen sogar das doppelte davon also bis zu 130 Liter Wasser durchschittlich täglich. Das wären ungefähr 630 Glässer Wasser oder 13 Eimer Wasser. ",
-        "commentIfFalse": "Leider liegt ihr alle Falsch, wir verbrauchen bis zu 130 Liter Wasser täglich von Waschen bis hinzu Essen und Trinken. Wir benutzen Wasser im unteren Leben sehr vielfältigt."
+        "commentIfFalse": "Leider liegt ihr alle falsch, wir verbrauchen bis zu 130 Liter Wasser täglich von Waschen bis hinzu Essen und Trinken. Wir benutzen Wasser im unteren Leben sehr vielfältigt."
     },
     {
         "question": "Ali und Chris finden: Wasser brauchen wir nur um es zu Trinken. Glaubst du Ali und Chris haben recht ",
