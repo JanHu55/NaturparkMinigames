@@ -1,32 +1,32 @@
 [
     {
         "id": "1",
-        "src": "images/Thema_03/Memory_Dinkel.jpg",
+        "src": "images/Thema_03/Memory_Dinkel.PNG",
         "text": "Dinkel"
     },
     {
         "id": "2",
-        "src": "images/Thema_03/Memory_Weizen.jpg",
+        "src": "images/Thema_03/Memory_Weizen.PNG",
         "text": "Weizen"
     },
     {
         "id": "3",
-        "src": "images/Thema_03/Memory_Gerste.jpg",
+        "src": "images/Thema_03/Memory_Gerste.PNG",
         "text": "Gerste"
     },
     {
         "id": "4",
-        "src": "images/Thema_03/Memory_Hirse.jpg",
+        "src": "images/Thema_03/Memory_Hirse.PNG",
         "text": "Hirse"
     },
     {
         "id": "5",
-        "src": "images/Thema_03/Memory_Roggen.jpg",
+        "src": "images/Thema_03/Memory_Roggen.PNG",
         "text": "Roggen"
     },
     {
         "id": "5",
-        "src": "images/Thema_03/Memory_Hafer.jpg",
+        "src": "images/Thema_03/Memory_Hafer.PNG",
         "text": "Hafer"
     }
 ]
