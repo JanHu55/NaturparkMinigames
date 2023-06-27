@@ -1,6 +1,6 @@
 [
     {
-      "question": "Wenn Bäume kein Wasser mehr in Baumspitzen transportieren können...",
+      "question": "Wenn ein Baum kein Wasser mehr in die Baumspitzen transportieren kann...",
       "answers": [
             { "text": "bildet er eine dickere Rinde.", "correct": false
             },
@@ -26,7 +26,7 @@
         ]
     },
     {
-      "question": "Was bedeutet, dass Wälder bewirtschaftet werden?",
+      "question": "Was bedeutet, dass Wälder \"bewirtschaftet\" werden?",
       "answers": [
             { "text": "Holz wird geerntet und dafür werden neue Bäume gepflanzt.", "correct": true
             },
