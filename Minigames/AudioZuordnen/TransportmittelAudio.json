@@ -1,0 +1,32 @@
+[
+    {
+        "src": "sounds/Thema_03/Auto.mp3",
+        "pairID": "1",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_03/Fahrrad.mp3",
+        "pairID": "2",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_03/Flugzeug.mp3",
+        "pairID": "3",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_03/Gehen.mp3",
+        "pairID": "4",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_03/Schiff.mp3",
+        "pairID": "5",
+        "type": "audio/mpeg"
+    },
+    {
+        "src": "sounds/Thema_03/Zug.wav",
+        "pairID": "6",
+        "type": "audio/mpeg"
+    }
+]
