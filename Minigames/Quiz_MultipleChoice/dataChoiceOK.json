@@ -67,7 +67,7 @@
     {
       "question": "Was bedeutet \"Aufforsten\"?",
       "answers": [
-            { "text": "Das ist ein anderes Wort für Demonstrieren im Wald.", "correct": false
+            { "text": "Das ist ein anderes Wort für demonstrieren im Wald.", "correct": false
             },
             { "text": "Gefällte Bäume werden aufeinander gestapelt.", "correct": false
             },
