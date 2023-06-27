@@ -1,46 +1,41 @@
 [
     {
-        "text": "Der Feldsee liegt im Naturpark Südschwarzwald am Fuße der höchsten Erhebung in Baden-Württemberg: Dem Feldberg.",
-        "input": "",
-        "text_after": " "
-    },
-    {
-        "text": "Der Feldsee ist ein typischer",
+        "text": "Der Feldsee liegt im Naturpark Südschwarzwald am Fuße der höchsten Erhebung in Baden-Württemberg: Dem Feldberg. Der Feldsee ist ein typischer ",
         "input": "Karsee",
-        "text_after": "der als Überbleibsel der letzten Eiszeit betrachtet werden kann."
+        "text_after": ", der als Überbleibsel der letzten Eiszeit betrachtet werden kann. "
     },
     {
-        "text": "Über tausende von Jahren wurde Gesteinsmaterial durch",
+        "text": " Über tausende von Jahren wurde Gesteinsmaterial durch ",
         "input": "Gletscher",
-        "text_after": "abgetragen und ausgehobelt, wodurch der See heute an der tiefsten Stelle bis zu 34 Meter tief ist."
+        "text_after": "abgetragen und ausgehobelt, wodurch der See heute an der tiefsten Stelle bis zu 34 Meter tief ist. "
     },
     {
         "text": "Aufgrund der Höhenlage von etwa 1100 Metern ist der Feldsee in den ",
         "input": "Wintermonaten",
-        "text_after": "komplett zugefroren und von einer hohen Schneeschicht bedeckt."
+        "text_after": "komplett zugefroren und von einer hohen Schneeschicht bedeckt. "
     },
     {
-        "text": "Das Wasser im Feldsee ist ziemlich kalt,",
+        "text": "Das Wasser im Feldsee ist ziemlich kalt, ",
         "input": "nährstoffarm",
-        "text_after": "und Sauerstoffreich. Das hat zufolge das nur wenige spezialisierte Pflanzen aufwachsen können."
+        "text_after": "und sauerstoffreich. Das hat zufolge, dass nur wenige spezialisierte Pflanzen aufwachsen können. "
     },
     {
-        "text": "Bedeckt ist der Seeboden mit verschiedenen Wasserpflanzen. Die wohl bekannteste Pflanze im Feldsee ist das",
-        "input": "stachelsporige Brachsenkraut.",
-        "text_after": "Weil Sie unter Naturschutz steht, ist es unter anderem verboten im Feldsee zu baden."
+        "text": "Bedeckt ist der Seeboden mit verschiedenen Wasserpflanzen. Die wohl bekannteste Pflanze im Feldsee ist das ",
+        "input": "stachelsporige Brachsenkraut. ",
+        "text_after": "Weil sie unter Naturschutz steht, ist es unter anderem verboten im Feldsee zu baden. "
     },
     {
-        "text": "Auch für vereinzelte Krebs-, Muschel- und Fischarten dient der See als Lebensraum.",
+        "text": "Auch für vereinzelte Krebs-, Muschel- und Fischarten dient der See als Lebensraum. ",
         "input": "Erbsenmuschel, der Ruderfußkrebs und der Seesaibling",
         "text_after": "sind typische Lebewesen am Feldsee."
     },
     {
         "text": "Umgeben ist der Feldsee von einem sich selbst überlassenen ",
         "input": "Bannwald",
-        "text_after": "aus Buchen, Tannen, Fichten und Bergahorn. Der Mensch greift hier nicht in den Baum-, Pflanzen- oder Tierbestand ein."
+        "text_after": "aus Buchen, Tannen, Fichten und Bergahorn. Der Mensch greift hier nicht in den Baum-, Pflanzen- oder Tierbestand ein. "
     },
     {
-        "text": "Für Urlauber:innen ist der Feldsee ein beliebtes Ziel. Nach einer Rundwanderung ist in den",
+        "text": "Für Urlauber:innen ist der Feldsee ein beliebtes Ziel. Nach einer Rundwanderung ist in den ",
         "input": "Sommermonaten",
         "text_after": "im nahegelegenen Raimartihof für die leibliche Verpflegung gesorgt."
     }
