@@ -36,7 +36,7 @@
         "column": "three"
     },
     {
-        "text": "Bauholz",
+        "text": "Brennholz",
         "column": "two"
     },
     {
@@ -45,14 +45,6 @@
     },
     {
         "text": "Möbel",
-        "column": "two"
-    },
-    {
-        "text": "Luftkurort",
-        "column": "three"
-    },
-    {
-        "text": "Beeren sammeln",
         "column": "two"
     },
     {
@@ -70,10 +62,6 @@
     {
         "text": "Lärm",
         "column": "one"
-    },
-    {
-        "text": "Brennholz",
-        "column": "two"
     },
     {
         "text": "Artenschutz",
