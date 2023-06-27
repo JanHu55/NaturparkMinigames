@@ -2,8 +2,8 @@
     {
         "question": "Wenn ich im Wald eine schöne Pflanze entdecke, darf ich sie abreißen und mit nach Hause nehmen.",
         "booleanOfQuestion": false,
-        "commentIfRight": "Korrekt!",
-        "commentIfFalse": "Um die Natur zu schützen, verhalte dich dem Wald gegenüber respektvoll und greife nicht in die Natur ein. Das bedeutet, dass du keine Pflanzen abreißen solltest."
+        "commentIfRight": "Korrekt! Im Wald sollte man keine Pflanzen abreißen.",
+        "commentIfFalse": "Um die Natur zu schützen, greife nicht in die Natur ein. Das bedeutet, dass du keine Pflanzen abreißen solltest."
     },
     {
         "question": "Wenn möglich, sollte ich im Wald auf den gekennzeichneten Wegen bleiben.",
@@ -24,21 +24,21 @@
         "commentIfFalse": "Um die Tiere in der Natur zu schützen, halte bitte Abstand zu ihnen und verhalte dich leise und unauffällig. "
     },
     {
-        "question": " Für das Entstehen von Pisten zum Skifahren werden jährlich viele Kilometer Wald gerodet. Dies schadet dem Wald und all seinen Bewohnern.",
+        "question": "Für das Entstehen von Pisten zum Skifahren werden jährlich viele Kilometer Wald gerodet. Dies schadet dem Wald und all seinen Bewohnern.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Korrekt!",
+        "commentIfRight": "Korrekt! Das Bauen von Ski-Pisten zerstört den Lebensraum vieler Tiere und Pflanzen. Außerdem kommt es in diesen Gebieten häufiger zu Erdrutschen und Lawinen.",
         "commentIfFalse": "Um Pisten zu bauen, werden oft viele Bäume gefällt. Das zerstört den Lebensraum vieler Tiere und Pflanzen. Außerdem kommt es in diesen Gebieten häufiger zu Erdrutschen und Lawinen."
     },
     {
-        "question": "Viele Menschen gehen im Winter gerne Skifahren. Es gibt viele Menschen, die durch die Touristinnen und Touristen Geld verdienen.",
+        "question": "Viele Menschen gehen im Winter gerne Skifahren. Es gibt Menschen, die durch die Touristinnen und Touristen Geld verdienen.",
         "booleanOfQuestion": true,
         "commentIfRight": "Korrekt! Viele Menschen die in Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe.",
         "commentIfFalse": "Viele Menschen die in Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe."
     },
     {
-        "question": "Skifahren und das Anlegen von Pisten schadet den Pflanzen und Tieren des Waldes nicht, weil sich die Pisten außerhalb des natürlichen Lebensraums von Pflanzen und Tieren befinden.",
+        "question": "Skifahren und das Anlegen von Pisten schadet den Pflanzen und Tieren des Waldes nicht, weil sich die Pisten nicht im natürlichen Lebensraum von Pflanzen und Tieren befinden.",
         "booleanOfQuestion": false,
-        "commentIfRight": "Korrekt! Ski-Pisten müssen erst gebaut werden, das zerstört den Lebensraum vieler Tiere und Pflanzen.",
+        "commentIfRight": "Korrekt! Ski-Pisten befinden sich oft in den natürlichen Lebensräumen von Tieren wie Rehe, Hasen, Füchse und heimische Vogelarten sowie Pflanzen. Das Bauen von Pisten zerstört den Lebensraum vieler Tiere und Pflanzen.",
         "commentIfFalse": "Ski-Pisten befinden sich oft in den natürlichen Lebensräumen von Tieren wie Rehe, Hasen, Füchse und heimische Vogelarten. Außerdem werden durch das Anlegen von Ski-Pisten heimische Pflanzen vernichtet. "
     }
 ]
