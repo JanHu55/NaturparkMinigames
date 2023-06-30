@@ -1,0 +1,64 @@
+[
+    {
+      "question": "Welche Gegenstände werden vom Strohflechter im Hochschwarzwald hergestellt?",
+      "answers": [
+            { "text": "Töpfe, Pfannen, Besteck", "correct": false
+            },
+            { "text": "Kleider, Schuhe, Schmuck", "correct": false
+            },
+            { "text": "Bücher, Stifte, Notizblöcke", "correct": false
+            },
+            { "text": "Hüte, Körbe, Dekorationen", "correct": true
+            }
+        ]
+    },
+    {
+      "question": "Wo arbeiten Strohflechter im Hochschwarzwald und verkaufen ihre Produkte?",
+      "answers": [
+            { "text": "Supermärkte und Einkaufszentren", "correct": false
+            },
+            { "text": "Schulen und Bibliotheken", "correct": false
+            },
+            { "text": "Restaurants und Cafés", "correct": false
+            },
+            { "text": "Kleine Werkstätten und auf Märkten", "correct": true
+            }
+        ]
+    },
+    {
+      "question": "Welche Art von Bürsten werden vom Bürstenbinder hergestellt?",
+      "answers": [
+            { "text": "Spielzeugautos und Puppen", "correct": false
+            },
+            { "text": "Uhren und Schmuck", "correct": false
+            },
+            { "text": " Elektronikgeräte und Computer", "correct": false
+            },
+            { "text": "Haushaltsbürsten und Besen und Zahnbürsten", "correct": true
+            }]
+    },
+    {
+      "question": "Welche Materialien werden vom Bürstenbinder verwendet?",
+      "answers": [
+            { "text": "Glas und Keramik", "correct": false
+            },
+            { "text": "Holz und Borsten", "correct": true
+            },
+            { "text": " Papier und Pappe", "correct": false
+            },
+            { "text": "Kunststoff und Metall", "correct": false
+            }, 
+        {
+      "question": "Welche Art von Produkten stellt ein Glassbläser her?",
+      "answers": [
+            { "text": "Kerzen und Seifen", "correct": false
+            },
+            { "text": " Kleidung und Schuhe", "correct": false
+            },
+            { "text": "Gläser und Vasen", "correct": true
+            },
+            { "text": "Bücher und Stifte", "correct": false
+            }
+        ]
+    }
+]}]
