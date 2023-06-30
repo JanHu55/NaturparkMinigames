@@ -26,7 +26,7 @@
         ]
     },
     {
-      "question": "Kühe stoßen große Mengen Methan Gas aus. Methan ist ein Treibhausgas wie CO2 aber ist 25 mal wirksamer als dieses. Kühe haben demnach einen negativen Effekt auf unser Klima. Was denkst du wie viel Methan eine Kuh im Jahr ausstößt?",
+      "question": "Kühe stoßen große Mengen Methan aus, welches einen negativen Effekt auf unser Klima hat. Was denkst du wie viel Methan eine Kuh im Jahr ausstößt?",
       "answers": [
             { "text": "15 kg", "correct": false
             },
