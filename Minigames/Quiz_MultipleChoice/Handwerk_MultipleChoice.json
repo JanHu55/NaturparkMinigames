@@ -15,13 +15,13 @@
     {
       "question": "Wo arbeiten Strohflechter im Hochschwarzwald und verkaufen ihre Produkte?",
       "answers": [
-            { "text": "Supermärkte und Einkaufszentren", "correct": false
+            { "text": "Kleine Werkstätten und auf Märkten", "correct": true
             },
             { "text": "Schulen und Bibliotheken", "correct": false
             },
             { "text": "Restaurants und Cafés", "correct": false
             },
-            { "text": "Kleine Werkstätten und auf Märkten", "correct": true
+            { "text": "Supermärkte und Einkaufszentren", "correct": false
             }
         ]
     },
