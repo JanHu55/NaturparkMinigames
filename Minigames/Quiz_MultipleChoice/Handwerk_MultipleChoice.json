@@ -32,7 +32,7 @@
             },
             { "text": "Uhren und Schmuck", "correct": false
             },
-            { "text": " Elektronikgeräte und Computer", "correct": false
+            { "text": "Elektronikgeräte und Computer", "correct": false
             },
             { "text": "Haushaltsbürsten und Besen und Zahnbürsten", "correct": true
             }
@@ -45,7 +45,7 @@
             },
             { "text": "Holz und Borsten", "correct": true
             },
-            { "text": " Papier und Pappe", "correct": false
+            { "text": "Papier und Pappe", "correct": false
             },
             { "text": "Kunststoff und Metall", "correct": false
              }
@@ -56,7 +56,7 @@
       "answers": [
             { "text": "Kerzen und Seifen", "correct": false
             },
-            { "text": " Kleidung und Schuhe", "correct": false
+            { "text": "Kleidung und Schuhe", "correct": false
             },
             { "text": "Gläser und Vasen", "correct": true
             },
