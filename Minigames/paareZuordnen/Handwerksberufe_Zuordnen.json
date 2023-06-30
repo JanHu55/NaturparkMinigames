@@ -1,0 +1,35 @@
+[
+    {
+        "src": "images/Thema_02/Bürstenbinder_Bild.jpg",
+        "pairID": "1"
+    },
+    {
+        "src": "images/Thema_02/Bürstenbinder_Text.jpg",
+        "pairID": "1"
+    },
+    {
+        "src": "images/Thema_02/Forstwirt_Bild.jpg",
+        "pairID": "2"
+    },
+    {
+        "src": "images/Thema_02/Forstwirt_Text.jpg",
+        "pairID": "2"
+    },
+    {
+        "src": "images/Thema_02/Glasbläser_Bild.jpg",
+        "pairID": "3"
+    },
+    {
+        "src": "images/Thema_02/Glasbläser_Text.jpg",
+        "pairID": "3"
+    },
+    {
+        "src": "images/Thema_02/Strohflechter_Bild.jpg",
+        "pairID": "4"
+    },
+    {
+        "src": "images/Thema_02/Strohflechter_Text.jpg",
+        "pairID": "4"
+    }
+    
+]
