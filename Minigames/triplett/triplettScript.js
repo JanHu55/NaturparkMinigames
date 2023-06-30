@@ -36,6 +36,7 @@ var triplettGame;
             //div wird erstellt
             for (let i = 0; i < 3; i++) {
                 let div = document.createElement("div");
+                let pText = document.createElement("p");
                 let str = "";
                 if (i === 0) {
                     str = card.src;
@@ -53,9 +54,13 @@ var triplettGame;
                     img.src = str;
                     div.appendChild(img);
                     console.log("Contains JPG or PNG");
+                    //back Klasse wird hinzugefügt 
                 }
                 else {
-                    div.innerHTML = str;
+                    pText.innerText = str;
+                    div.appendChild(pText);
+                    console.log("Contains JPG or PNG");
+                    //back Klasse wird hinzugefügt 
                 }
                 //back Klasse wird hinzugefügt 
                 div.setAttribute("class", "back");

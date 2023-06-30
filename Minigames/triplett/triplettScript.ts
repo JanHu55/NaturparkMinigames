@@ -53,6 +53,7 @@ namespace triplettGame {
             //div wird erstellt
             for (let i: number = 0; i < 3; i++) {
                 let div: HTMLDivElement = document.createElement("div");
+                let pText: HTMLParagraphElement = document.createElement("p");
                 let str: string = "";
                 if (i === 0) {
                     str = card.src;
@@ -69,8 +70,14 @@ namespace triplettGame {
                     img.src = str;
                     div.appendChild(img);
                     console.log("Contains JPG or PNG");
+                    //back Klasse wird hinzugefügt 
+
                 } else {
-                    div.innerHTML = str;
+                    pText.innerText = str;
+                    div.appendChild(pText);
+                    console.log("Contains JPG or PNG");
+                    //back Klasse wird hinzugefügt 
+
                 }
 
                 //back Klasse wird hinzugefügt 
