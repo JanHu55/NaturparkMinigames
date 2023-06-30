@@ -1,33 +1,33 @@
 [
     {
         "text": "Wasser ist überall um uns herum und ist für unser Leben von großer Bedeutung. Über Wasser gibt es viele spannende Dinge zu lernen. Lass uns den Wasserkreislauf genauer untersuchen! Wenn es warm wird und die ",
-        "input": "Sonne",
-        "text_after": " scheint, erwärmt sich das Wasser in Flüssen, Seen und dem Meer. "
+        "input": "Sonne ",
+        "text_after": "scheint, erwärmt sich das Wasser in Flüssen, Seen und dem Meer. "
     },
     {
         "text": "Es steigt als unsichtbarer ",
-        "input": "Wasserdampf",
-        "text_after": " in der Luft auf. Das nennt man Verdunstung."
+        "input": "Wasserdampf ",
+        "text_after": "in der Luft auf. Das nennt man Verdunstung. "
     },
     {
         "text": "Weiter oben im Himmel kühlt der Wasserdampf ab und bildet Tröpfchen. Diesen Vorgang nennt man Kondensation. Die Tröpfchen sammeln sich an und bilden ",
-        "input": "Wolken",
-        "text_after": ". "
+        "input": "Wolken. ",
+        "text_after": ""
     },
     {
         "text": "Es sammeln sich immer mehr Tröpfchen in der Wolke und bringen diese zum Wachsen, bis sie so schwer ist, dass es anfängt zu ",
-        "input": "regnen",
-        "text_after": ". "
+        "input": "regnen. ",
+        "text_after": ""
     },
     {
         "text": "Ein Teil des Regens verdampft ganz schnell wieder. Der andere Teil des Regens versickert in den Boden als ",
-        "input": " Grundwasser ",
-        "text_after": " oder fließt zurück in Seen oder Bäche. "
+        "input": "Grundwasser ",
+        "text_after": "oder fließt zurück in Seen oder Bäche. "
     },
     {
         "text": "Das Wasser im Grundwasser kann von ",
-        "input": "Pflanzen",
-        "text_after": " aufgenommen werden oder wieder an die Oberfläche gelangen, zum Beispiel durch Quellen. Der Wasserkreislauf zeigt uns, wie wichtig Wasser für unser Leben ist. Es versorgt uns mit Trinkwasser und ermöglicht das Wachstum von Pflanzen. "
+        "input": "Pflanzen ",
+        "text_after": "aufgenommen werden oder wieder an die Oberfläche gelangen, zum Beispiel durch Quellen. Der Wasserkreislauf zeigt uns, wie wichtig Wasser für unser Leben ist. Es versorgt uns mit Trinkwasser und ermöglicht das Wachstum von Pflanzen. "
     },
     
 ]
