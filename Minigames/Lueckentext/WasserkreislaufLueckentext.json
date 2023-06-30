@@ -27,7 +27,21 @@
     {
         "text": "Das Wasser im Grundwasser kann von ",
         "input": "Pflanzen ",
-        "text_after": "aufgenommen werden oder wieder an die Oberfläche gelangen, zum Beispiel durch Quellen. Der Wasserkreislauf zeigt uns, wie wichtig Wasser für unser Leben ist. Es versorgt uns mit Trinkwasser und ermöglicht das Wachstum von Pflanzen. "
+        "text_after": "aufgenommen werden oder wieder an die Oberfläche gelangen "
+    },[
+    {
+        "text": ",zum Beispiel durch ",
+        "input": "Quellen. ",
+        "text_after": "Der Wasserkreislauf zeigt uns, wie wichtig Wasser für unser Leben ist. "
+    },
+    {
+        "text": "Es versorgt uns mit ",
+        "input": "Trinkwasser ",
+        "text_after": "und ermöglicht das Wachstum von Pflanzen. "
     }
+    
+    
+]
+
     
 ]
