@@ -35,7 +35,8 @@
             { "text": " Elektronikgeräte und Computer", "correct": false
             },
             { "text": "Haushaltsbürsten und Besen und Zahnbürsten", "correct": true
-            }]
+            }
+          ]
     },
     {
       "question": "Welche Materialien werden vom Bürstenbinder verwendet?",
@@ -47,8 +48,10 @@
             { "text": " Papier und Pappe", "correct": false
             },
             { "text": "Kunststoff und Metall", "correct": false
-            }, 
-        {
+             }
+          ]
+     }, 
+     {
       "question": "Welche Art von Produkten stellt ein Glassbläser her?",
       "answers": [
             { "text": "Kerzen und Seifen", "correct": false
