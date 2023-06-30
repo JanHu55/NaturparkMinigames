@@ -2,31 +2,31 @@
     {
         "id": "1",
         "src": "images/baumkunde/Memory_Birke.jpg",
-        "text": "Birke"
+        "src2": "Birke"
     },
     {
         "id": "2",
         "src": "images/baumkunde/Bild4.jpg",
-        "text": "Fichte"
+        "src2": "Fichte"
     },
     {
         "id": "3",
         "src": "images/baumkunde/Memory_Tanne.jpg",
-        "text": "Tanne"
+        "src2": "Tanne"
     },
     {
         "id": "4",
         "src": "images/baumkunde/Eiche.jpg",
-        "text": "Eiche"
+        "src2": "Eiche"
     },
     {
         "id": "5",
         "src": "images/baumkunde/Bild9.jpg",
-        "text": "Rotbuche"
+        "src2": "Rotbuche"
     },
     {
         "id": "6",
         "src": "images/baumkunde/Bild11.jpg",
-        "text": "Bergahorn"
+        "src2": "Bergahorn"
     }
 ]

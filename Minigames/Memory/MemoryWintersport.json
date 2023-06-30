@@ -2,31 +2,31 @@
     {
         "id": "1",
         "src": "images/Thema_04/Memory_Schlitten.jpg",
-        "text": "Schlittenfahren"
+        "src2": "Schlittenfahren"
     },
     {
         "id": "2",
         "src": "images/Thema_04/Memory_Langlauf.jpg",
-        "text": "Langlaufen"
+        "src2": "Langlaufen"
     },
     {
         "id": "3",
         "src": "images/Thema_04/Memory_Tourenski.jpg",
-        "text": "Tourenski gehen"
+        "src2": "Tourenski gehen"
     },
     {
         "id": "4",
         "src": "images/Thema_04/Memory_Ski.jpg",
-        "text": "Skifahren"
+        "src2": "Skifahren"
     },
     {
         "id": "5",
         "src": "images/Thema_04/Memory_Snowboard.jpg",
-        "text": "Snowboarden"
+        "src2": "Snowboarden"
     },
     {
         "id": "6",
         "src": "images/Thema_04/Memory_Schlittschuh.jpg",
-        "text": "Schlittschuhlaufen"
+        "src2": "Schlittschuhlaufen"
     }
 ]

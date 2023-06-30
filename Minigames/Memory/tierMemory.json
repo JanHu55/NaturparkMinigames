@@ -2,26 +2,26 @@
     {
         "id": "1",
         "src": "images/Thema_01/Memory_Fuchs.jpg",
-        "text": "Fuchs"
+        "src2": "Fuchs"
     },
     {
         "id": "2",
         "src": "images/Thema_01/Memory_Karpfen.jpg",
-        "text": "Karpfen"
+        "src2": "Karpfen"
     },
     {
         "id": "3",
         "src": "images/Thema_01/Memory_Reh.jpg",
-        "text": "Reh"
+        "src2": "Reh"
     },
     {
         "id": "4",
         "src": "images/Thema_01/Memory_Specht.jpg",
-        "text": "Specht"
+        "src2": "Specht"
     },
     {
         "id": "5",
         "src": "images/Thema_01/Memory_Wolf.jpg",
-        "text": "Wolf"
+        "src2": "Wolf"
     }
 ]

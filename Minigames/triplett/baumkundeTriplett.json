@@ -1,32 +1,32 @@
 [
     {
         "src": "images/baumkunde/Triplett_Birke.jpg",
-        "text": "Birke",
-        "src2": "images/baumkunde/Bild2.png"
+        "src2": "Birke",
+        "src3": "images/baumkunde/Bild2.png"
     },
     {
         "src": "images/baumkunde/Bild11.jpg",
-        "text": "Bergahorn",
-        "src2": "images/baumkunde/Bild12.jpg"
+        "src2": "Bergahorn",
+        "src3": "images/baumkunde/Bild12.jpg"
     },
     {
         "src": "images/baumkunde/Bild9.jpg",
-        "text": "Rotbuche",
-        "src2": "images/baumkunde/RotbucheBlatt.jpg"
+        "src2": "Rotbuche",
+        "src3": "images/baumkunde/RotbucheBlatt.jpg"
     },
     {
         "src": "images/baumkunde/Eiche.jpg",
-        "text": "Eiche",
-        "src2": "images/baumkunde/Bild13.jpg"
+        "src2": "Eiche",
+        "src3": "images/baumkunde/Bild13.jpg"
     },
     {
         "src": "images/baumkunde/Triplett_Tanne.jpg",
-        "text": "Tanne",
-        "src2": "images/baumkunde/Tannenzapfen.jpg"
+        "src2": "Tanne",
+        "src3": "images/baumkunde/Tannenzapfen.jpg"
     },
     {
         "src": "images/baumkunde/Bild4.jpg",
-        "text": "Fichte",
-        "src2": "images/baumkunde/Triplett_Fichtenzapfen.jpg"
+        "src2": "Fichte",
+        "src3": "images/baumkunde/Triplett_Fichtenzapfen.jpg"
     }
 ]

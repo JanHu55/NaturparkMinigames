@@ -1,32 +1,32 @@
 [
     {
-        "text": "Sau",
-        "text2": "Eber",
-        "text3": "Ferkel"
+        "src": "Sau",
+        "src2": "Eber",
+        "src3": "Ferkel"
     },
     {
-        "text": "Henne",
-        "text2": "Hahn",
-        "text3": "Küken"
+        "src": "Henne",
+        "src2": "Hahn",
+        "src3": "Küken"
     },
     {
-        "text": "Kuh",
-        "text2": "Ochse",
-        "text3": "Kalb"
+        "src": "Kuh",
+        "src2": "Ochse",
+        "src3": "Kalb"
     },
     {
-        "text": "Katze",
-        "text2": "Kater",
-        "text3": "Kitten"
+        "src": "Katze",
+        "src2": "Kater",
+        "src3": "Kitten"
     },
     {
-        "text": "Ziege",
-        "text2": "Bock",
-        "text3": "Zicklein"
+        "src": "Ziege",
+        "src2": "Bock",
+        "src3": "Zicklein"
     },
     {
-        "text": "Stute",
-        "text2": "Hengst",
-        "text3": "Fohlen"
+        "src": "Stute",
+        "src2": "Hengst",
+        "src3": "Fohlen"
     }
 ]
