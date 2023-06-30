@@ -16,8 +16,8 @@
     },
     {
         "text": " und spielten eine wichtige Rolle bei der ",
-        "input": "Versorgung",
-        "text_after": "mit Bürsten."
+        "input": " Versorgung ",
+        "text_after": " mit Bürsten."
     },
     {
         "text": " Sie versorgten die Menschen zum Beispiel mit ",
@@ -25,7 +25,7 @@
         "text_after": " oder "
     },
     {
-        "text": " auch ",
+        "text": "auch ",
         "input": " Haarbürsten ",
         "text_after": ""
     },
