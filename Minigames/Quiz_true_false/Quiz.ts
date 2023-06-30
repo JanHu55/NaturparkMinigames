@@ -22,6 +22,7 @@ namespace QuizTrueFalse {
     });
 
     let item: Item;
+    let count: number = 0;
 
     // Richtig Button + booleanwert
     // let buttonRight: HTMLButtonElement = <HTMLButtonElement>document.getElementById("trueAnswer");
@@ -70,12 +71,15 @@ namespace QuizTrueFalse {
 
     async function generateContent(_data: Item[]): Promise<void> {
 
+        console.log(count);
+        console.log(_data.length);
         questionText.innerHTML = "";
-        let ranNum: number = Math.floor((Math.random() * _data.length));
-        console.log(_data);
-        item = _data[ranNum];
-        let removed = _data.splice(ranNum, 1);
-        console.log(removed);
+        // let ranNum: number = Math.floor((Math.random() * _data.length));
+        // console.log(_data);
+        item = _data[count];
+        count++;
+        // let removed = _data.splice(ranNum, 1);
+        // console.log(removed);
         // console.log(item.question);
         // console.log(item);
         questionText.innerHTML = item.question;
@@ -117,7 +121,9 @@ namespace QuizTrueFalse {
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event: Event) {
-        if (data.length == 0) {
+        //if (data.length == 0) {
+        if (count == data.length) {
+
             reloadBtn.style.display = "flex";
             console.log("Array leer");
         } else {
@@ -129,7 +135,6 @@ namespace QuizTrueFalse {
             reloadBtn.style.display = "none";
         }
     }
-
 }
 
 

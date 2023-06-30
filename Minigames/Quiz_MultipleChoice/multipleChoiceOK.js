@@ -7,7 +7,7 @@ const questionText = document.getElementById("question-text");
 // const source = document.getElementById("source");
 // const audioControls = document.getElementById("audio");
 
-let shuffledQuestions, currentQuestionIndex
+let allQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', handleLoad)
 nextButton.addEventListener('click', () => {
@@ -29,7 +29,8 @@ async function handleLoad() {
 
 function startGame(_data) {
   startButton.classList.add('hide')
-  shuffledQuestions = _data.sort(() => Math.random() - .5)
+  // shuffledQuestions = _data.sort(() => Math.random() - .5)
+  allQuestions = _data
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
@@ -37,7 +38,7 @@ function startGame(_data) {
 
 function setNextQuestion() {
   resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
+  showQuestion(allQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question) {
@@ -73,13 +74,13 @@ function selectAnswer(e) {
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
   })
-  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+  if (allQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
     startButton.innerText = 'Startseite'
     console.log("Finished Game");
     startButton.removeEventListener('click', startGame);
-    startButton.addEventListener("click", () => { window.open("../../Startseite/Startseite.html", "_self"); })
+    startButton.addEventListener("click", () => { window.open("../Startseite/Startseite.html", "_self"); })
     startButton.classList.remove('hide')
   }
 }

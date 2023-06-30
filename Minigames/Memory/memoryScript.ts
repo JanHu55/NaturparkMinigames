@@ -5,7 +5,7 @@ namespace memoryGame {
     interface Card {
         type: string;
         src: string;
-        text: string;
+        src2: string;
     }
 
     let pairs: number;
@@ -49,19 +49,28 @@ namespace memoryGame {
 
         //create the cards
         for (let card of cards) {
-
             //div wird erstellt
             for (let i: number = 0; i < 2; i++) {
                 let div: HTMLDivElement = document.createElement("div");
                 //back Klasse wird hinzugefügt
-                if (i == 0) {
+                let str: string = "";
+                if (i === 0) {
+                    str = card.src;
+                } else {
+                    str = card.src2;
+                }
+                const containsJPG = /\.jpg$/i.test(str);
+                const containsPNG = /\.png$/i.test(str);
+
+                if (containsJPG || containsPNG) {
                     let img: HTMLImageElement = document.createElement("img");
-                    img.src = card.src;
+                    img.src = str;
                     div.appendChild(img);
+                    console.log("Contains JPG or PNG");
+                } else {
+                    div.innerHTML = str;
                 }
-                else {
-                    div.innerHTML = card.text;
-                }
+
                 // div.style.width = "100px"; //in css machen
                 // div.style.height = "100px";
                 div.setAttribute("class", "back");

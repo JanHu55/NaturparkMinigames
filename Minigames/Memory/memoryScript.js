@@ -37,13 +37,23 @@ var memoryGame;
             for (let i = 0; i < 2; i++) {
                 let div = document.createElement("div");
                 //back Klasse wird hinzugefügt
-                if (i == 0) {
-                    let img = document.createElement("img");
-                    img.src = card.src;
-                    div.appendChild(img);
+                let str = "";
+                if (i === 0) {
+                    str = card.src;
                 }
                 else {
-                    div.innerHTML = card.text;
+                    str = card.src2;
+                }
+                const containsJPG = /\.jpg$/i.test(str);
+                const containsPNG = /\.png$/i.test(str);
+                if (containsJPG || containsPNG) {
+                    let img = document.createElement("img");
+                    img.src = str;
+                    div.appendChild(img);
+                    console.log("Contains JPG or PNG");
+                }
+                else {
+                    div.innerHTML = str;
                 }
                 // div.style.width = "100px"; //in css machen
                 // div.style.height = "100px";

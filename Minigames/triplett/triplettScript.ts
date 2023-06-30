@@ -4,8 +4,8 @@ namespace triplettGame {
 
     interface Card {
         src: string;
-        text: string;
         src2: string;
+        src3: string;
     }
 
     let pairs: number = 6;
@@ -53,19 +53,26 @@ namespace triplettGame {
             //div wird erstellt
             for (let i: number = 0; i < 3; i++) {
                 let div: HTMLDivElement = document.createElement("div");
-                if (i == 0) {
+                let str: string = "";
+                if (i === 0) {
+                    str = card.src;
+                } else if (i === 1) {
+                    str = card.src2;
+                } else {
+                    str = card.src3;
+                }
+                const containsJPG = /\.jpg$/i.test(str);
+                const containsPNG = /\.png$/i.test(str);
+
+                if (containsJPG || containsPNG) {
                     let img: HTMLImageElement = document.createElement("img");
-                    img.src = card.src;
+                    img.src = str;
                     div.appendChild(img);
+                    console.log("Contains JPG or PNG");
+                } else {
+                    div.innerHTML = str;
                 }
-                else if (i == 1) {
-                    let img: HTMLImageElement = document.createElement("img");
-                    img.src = card.src2;
-                    div.appendChild(img);
-                }
-                else {
-                    div.innerHTML = card.text;
-                }
+
                 //back Klasse wird hinzugefügt 
                 div.setAttribute("class", "back");
                 div.setAttribute("pairID", id.toString());

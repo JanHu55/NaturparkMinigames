@@ -36,18 +36,26 @@ var triplettGame;
             //div wird erstellt
             for (let i = 0; i < 3; i++) {
                 let div = document.createElement("div");
-                if (i == 0) {
-                    let img = document.createElement("img");
-                    img.src = card.src;
-                    div.appendChild(img);
+                let str = "";
+                if (i === 0) {
+                    str = card.src;
                 }
-                else if (i == 1) {
-                    let img = document.createElement("img");
-                    img.src = card.src2;
-                    div.appendChild(img);
+                else if (i === 1) {
+                    str = card.src2;
                 }
                 else {
-                    div.innerHTML = card.text;
+                    str = card.src3;
+                }
+                const containsJPG = /\.jpg$/i.test(str);
+                const containsPNG = /\.png$/i.test(str);
+                if (containsJPG || containsPNG) {
+                    let img = document.createElement("img");
+                    img.src = str;
+                    div.appendChild(img);
+                    console.log("Contains JPG or PNG");
+                }
+                else {
+                    div.innerHTML = str;
                 }
                 //back Klasse wird hinzugefügt 
                 div.setAttribute("class", "back");
