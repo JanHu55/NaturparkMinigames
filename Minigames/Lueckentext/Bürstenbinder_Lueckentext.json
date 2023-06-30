@@ -1,42 +1,42 @@
 [
     {
-        "text": "Im Hochschwarzwald hat der Beruf des Bürstenbinders eine lange Geschichte. Die",
-        "input": "Bürstenbinder",
-        "text_after": "stellen aus natürlichen Materialien, wie Tierborsten und Holzgriffe, bürsten her."
+        "text": "Im Hochschwarzwald hat der Beruf des Bürstenbinders eine lange Geschichte. Die ",
+        "input": " Bürstenbinder ",
+        "text_after": " stellen aus natürlichen Materialien, wie Tierborsten und Holzgriffe, bürsten her."
     },
     {
-        "text": "Die meisten Bürstenbinder waren in kleinen ",
-        "input": "Werkstätten",
-        "text_after": "wie"
+        "text": " Die meisten Bürstenbinder waren in kleinen ",
+        "input": " Werkstätten ",
+        "text_after": " wie "
     },
     {
-        "text": "auch",
-        "input": "Familienbetrieben",
-        "text_after": "tätig"
+        "text": " auch ",
+        "input": " Familienbetrieben ",
+        "text_after": " tätig "
     },
     {
-        "text": "und spielten eine wichtige Rolle bei der",
+        "text": " und spielten eine wichtige Rolle bei der ",
         "input": "Versorgung",
         "text_after": "mit Bürsten."
     },
     {
-        "text": "Sie versorgten die Menschen zum Beispiel mit",
-        "input": "Zahnbürsten",
-        "text_after": "oder"
+        "text": " Sie versorgten die Menschen zum Beispiel mit ",
+        "input": " Zahnbürsten ",
+        "text_after": " oder "
     },
     {
-        "text": "auch ",
-        "input": "Haarbürsten",
+        "text": " auch ",
+        "input": " Haarbürsten ",
         "text_after": ""
     },
     {
-        "text": "Mit der",
-        "input": "Industrialisierung",
-        "text_after": "verlor der Beruf an Bedeutung, aber es gibt noch"
+        "text": " Mit der ",
+        "input": " Industrialisierung ",
+        "text_after": " verlor der Beruf an Bedeutung, aber es gibt noch "
     },
   {
-        "text": "einige ",
-        "input": "Bürstenbinder",
+        "text": " einige ",
+        "input": " Bürstenbinder ",
         "text_after": ", die den Beruf heutzutage noch ausüben."
     }
     
