@@ -25,7 +25,7 @@
         "type": "audio/mpeg"
     },
     {
-        "src": "sounds/Thema_03/Zug.wav",
+        "src": "sounds/Thema_03/Zug.mp3",
         "pairID": "6",
         "type": "audio/mpeg"
     }
