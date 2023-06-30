@@ -1,18 +1,18 @@
 [
     {
-        "text": "Vor etwa 121 Jahren, im Jahr 1902, begann die Familie Zahoransky im Hochschwarzwald Bürsten herzustellen. Sie hatten eine eigene Kleine ",
+        "text": "Vor etwa 121 Jahren, im Jahr 1902, begann die Familie Zahoransky im Hochschwarzwald Bürsten herzustellen. Sie hatten eine eigene kleine ",
         "input": "Werkstatt ",
         "text_after": "und "
     },
     {
         "text": "produzierten viele verschiedene ",
-        "input": "Bürsten.",
-        "text_after": ""
+        "input": "Bürsten",
+        "text_after": ". "
     },
     {
         "text": "Die Zahoransky-Familie war so ",
         "input": "geschickt ",
-        "text_after": "darin, Bürsten herzustellen, dass sie berühmt wurden. "
+        "text_after": " darin, Bürsten herzustellen, dass sie berühmt wurden. "
     },
     {
         "text": "Menschen aus der ganzen Welt wollten ebenfalls ihre ",
@@ -21,8 +21,8 @@
     },
     {
         "text": "Deshalb eröffneten sie Niederlassungen in verschiedenen ",
-        "input": "Ländern.",
-        "text_after": ""
+        "input": "Ländern",
+        "text_after": ". "
     },
     {
         "text": "Die Zahoransky-Familie unterstützte andere Bürstenbinder dabei, ihre Arbeit ",
@@ -39,8 +39,8 @@
         "input": "hervorragende Bürsten ",
         "text_after": "herzustellen. "
     },{
-        "text": "Heute ist Zahoransky ein ",
-        "input": "großes Unternehmen ",
+        "text": "Heute ist Zahoransky ein großes ",
+        "input": "Unternehmen",
         "text_after": ", das vielen Menschen dabei hilft, Bürsten herzustellen. "
     }
    
