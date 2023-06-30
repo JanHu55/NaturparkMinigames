@@ -25,6 +25,32 @@
             }
         ]
     },
+     {
+      "question": "Welche Probleme können sich aus dem Tourismus im Schwarzwald ergeben?",
+      "answers": [
+            { "text": "Entstehung neuer Vereine", "correct": false
+            },
+            { "text": "Die Pflege der Naturschutzgebiete", "correct": false
+            },
+            { "text": "Mehr Staus durch viel Verkehr auf den Straßen", "correct": true
+            },
+            { "text": "Die Verbesserung der öffentlichen Verkehrsmittel", "correct": false
+            }
+        ]
+    },
+        {
+      "question": "Welcher ist der höchste Berg des Schwarzwaldes und ein beliebtes touristisches Ziel?",
+      "answers": [
+            { "text": "Matterhorn", "correct": false
+            },
+            { "text": "Zugspitze", "correct": false
+            },
+            { "text": "Belchen", "correct": false
+            },
+            { "text": "Feldberg", "correct": true
+            }
+        ]
+    },
     {
       "question": "So reise ich rücksichtsvoll:",
       "answers": [
