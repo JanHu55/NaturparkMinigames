@@ -138,6 +138,9 @@ h2 {
 	margin: 4px 0px 4px 4px;
 }
 
+.list-1 .one {
+	background-color: var(--correct);
+}
 .list-1 .two {
 	background-color: var(--wrong);
 }
@@ -150,6 +153,9 @@ h2 {
 
 .list-2 .one {
 	background-color: var(--wrong);
+}
+.list-2 .two {
+	background-color: var(--correct);
 }
 .list-2 .three {
 	background-color: var(--wrong);
@@ -164,6 +170,9 @@ h2 {
 .list-3 .two {
 	background-color: var(--wrong);
 }
+.list-3 .three {
+	background-color: var(--correct);
+}
 .list-3 .four {
 	background-color: var(--wrong);
 }
@@ -176,6 +185,9 @@ h2 {
 }
 .list-4 .three {
 	background-color: var(--wrong);
+}
+.list-4 .three {
+	background-color: var(--correct);
 }
 
 .list-item.dragging {
