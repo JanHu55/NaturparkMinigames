@@ -8,7 +8,7 @@
             },
             { "text": "Regenwürmer sind eine wichtige Proteinquelle für die Kühe der Bauern.", "correct": false
             },
-            { "text": "Regenwürmer zersetzen Pflanzenreste und bilden Humus welcher die Bodenfruchtbarkeit steigert.", "correct": true
+            { "text": "Regenwürmer graben Löcher, in die die Bauern ihr Saatgut geben können.", "correct": false
             }
         ]
     },
@@ -39,15 +39,15 @@
         ]
     },
     {
-      "question": "Welche Fakten über Wildbienen stimmen?",
+      "question": "Welcher Fakt über Wildbienen stimmt nicht?",
       "answers": [
-            { "text": "Wildbienen produzieren keinen Honig", "correct": true
+            { "text": "Wildbienen produzieren keinen Honig", "correct": false
             },
-            { "text": "Hummeln sind die bekannteste Wildbienenart", "correct": true
+            { "text": "Hummeln sind die bekannteste Wildbienenart", "correct": false
             },
-            { "text": "Wildbienen leben in Bienenvölkern wie Honigbienen", "correct": false
+            { "text": "Wildbienen leben in Bienenvölkern wie Honigbienen", "correct": true
             },
-            { "text": "Wildbienen betäuben Pflanzen effektiver als Honigbienen", "correct": true
+            { "text": "Wildbienen betäuben Pflanzen effektiver als Honigbienen", "correct": false
             }
         ]
     }
