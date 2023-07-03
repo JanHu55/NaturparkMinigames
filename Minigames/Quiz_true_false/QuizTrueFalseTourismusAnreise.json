@@ -2,19 +2,19 @@
     {
         "question": "Das Auto ist besser für die Umwelt als der Bus.",
         "booleanOfQuestion": false,
-        "commentIfRight": "Korrekt!",
+        "commentIfRight": "Genau! In einen Bus passen mehr Personen als in ein Auto, wodurch pro Person weniger Diesel oder Benzin gebraucht wird. Deshalb ist der Bus besser für die Umwelt als das Auto.",
         "commentIfFalse": "In einen Bus passen mehr Personen als in ein Auto, wodurch pro Person weniger Diesel oder Benzin gebraucht wird. Deshalb ist der Bus besser für die Umwelt als das Auto."
     },
     {
         "question": "Der Zug ist besser für die Umwelt als das Flugzeug.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Korrekt!",
-        "commentIfFalse": "Der Zug ist umweltfreundlicher als das Flugzeug, da er weniger zur Erderwärmung beiträgt."
+        "commentIfRight": "Richtig! Der Zug ist umweltfreundlicher als das Flugzeug, da er weniger CO2 ausstößt.",
+        "commentIfFalse": "Der Zug ist umweltfreundlicher als das Flugzeug, da er weniger CO2 ausstößt."
     },
     {
         "question": "Das Schiff ist besser für die Umwelt als das Fahrrad.",
         "booleanOfQuestion": false,
-        "commentIfRight": "Korrekt!",
+        "commentIfRight": "Super gemacht! Das Fahrrad ist umweltfreundlicher als das Schiff, da es keine Abgase erzeugt, weniger Energie verbraucht und keinen Lärm verursacht.",
         "commentIfFalse": "Das Fahrrad ist umweltfreundlicher als das Schiff, da es keine Abgase erzeugt, weniger Energie verbraucht und keinen Lärm verursacht."
     }
 ]
