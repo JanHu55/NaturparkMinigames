@@ -1,6 +1,6 @@
 [
   {
-    "text": "Die Forstwirt:innen kümmern sich aktiv um die ",
+    "text": "Die Forstwirtinnen und Forstwirte kümmern sich aktiv um die ",
     "input": "Bäume und den Wald",
     "text_after": " im Schwarzwald, was einen sehr wichtigen und interssanten Beruf darstellt. "
   },
@@ -10,22 +10,22 @@
     "text_after": " zu erhalten und gut zu pflegen. "
   },
   {
-    "text": "Sie pflanzen neue Bäume und sorgen dafür, dass der Wald nich zu ",
+    "text": "Sie pflanzen neue Bäume und sorgen dafür, dass der Wald nicht zu ",
     "input": "dicht",
     "text_after": " wird. "
   },
   {
     "text": "In manchen Fällen müssen sie auch ",
-    "input": "kranke oder alte",
-    "text_after": " Bäume fällen, um Platz für neue Bäume zu schaffen. "
+    "input": "kranke",
+    "text_after": " oder alte Bäume fällen, um Platz für neue Bäume zu schaffen. "
   },
   {
-    "text": "Die Forstwirte gehen regelmäßig in den Wald und überprüfen den ",
+    "text": "Die Forstwirtinnen und Forstwirte gehen regelmäßig in den Wald und überprüfen den ",
     "input": "Zustand",
     "text_after": " der Bäume. "
   },
   {
-    "text": "Sie achten darauf, dass ihnen keine  ",
+    "text": "Sie achten darauf, dass sie keine  ",
     "input": "schädlichen",
     "text_after": " Tiere oder Pflanzen befallen. "
   },
@@ -33,16 +33,6 @@
     "text": "Zusätzlich achten sie darauf, dass die ",
     "input": "Tiere",
     "text_after": " im Wald ausreichend Platz zum leben haben und sorgen dafür, dass es genug Verstecke und Nahrung für sie gibt. "
-  },
-  {
-    "text": "Die Arbeit der Forstwirte erfordert oft ",
-    "input": "Teamarbeit",
-    "text_after": " ,da sie mit anderen Menschen zusammenarbeiten, um den Wald zu betreuen. "
-  },
-  {
-    "text": "Sie nutzen dabei  ",
-    "input": "moderne",
-    "text_after": " Techniken und Geräte."
   }
 
 ]
