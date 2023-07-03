@@ -1,4 +1,20 @@
 [
+   {
+        "text": "Im Hochschwarzwald hat der Beruf des Bürstenbinders eine lange Geschichte. Die ",
+        "input": "Bürstenbinder",
+        "text_after": "stellen aus natürlichen Materialien, wie Tierborsten und Holz, Bürsten her. "
+    },
+    {
+        "text": "Die meisten Bürstenbinder waren in kleinen ",
+        "input": "Werkstätten",
+        "text_after": " "
+    },
+    {
+        "text": "und ",
+        "input": "Familienbetrieben ",
+        "text_after": "tätig. "
+    },
+    
     {
         "text": "Vor etwa 121 Jahren, im Jahr 1902, begann die Familie Zahoransky im Hochschwarzwald Bürsten herzustellen. Sie hatten eine eigene kleine ",
         "input": "Werkstatt",
