@@ -55,11 +55,16 @@
         "text": "Heutzutage können Bürstenbinder weltweit die Zahoransky-Maschinen verwenden, um ",
         "input": "hervorragende Bürsten",
         "text_after": " herzustellen. "
-    },{
+    },
+   {
         "text": "Heute ist Zahoransky ein großes ",
         "input": "Unternehmen",
         "text_after": ", das vielen Menschen dabei hilft, Bürsten herzustellen. "
+    },
+   {
+        "text": "Heutzutage werden die meisten Bürsten von Maschinen hergestellt. Es gibt aber noch einige Bürstenbinder, die den Beruf immer noch in ",
+        "input": "Handarbeit",
+        "text_after": " ausüben."
     }
-   
     
 ]
