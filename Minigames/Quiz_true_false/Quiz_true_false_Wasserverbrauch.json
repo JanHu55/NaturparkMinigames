@@ -1,12 +1,6 @@
 [
     {
-        "question": "Tatjan meint: Wasser ist für uns Menschen nicht so wichtig. Was meinst du hat Tatjana recht?",
-        "booleanOfQuestion": false,
-        "commentIfRight": "du hast recht, Tatjan liegt mit ihrer Aussage Falsch. Wasser ist für Menschen essenziel wichtig un wir brauchen es zum Überleben. ",
-        "commentIfFalse": "Leider liegen du und Tatjan falsch. Wir Menschen brauchen Wasser als einen der wichsten Bestandteile unserers Lebens."
-    },
-    {
-        "question": "Tatjana hat sich mit Ali zusammen getan und sich nochmals über Wasser Infomiert. Sie sagen: Wir Menschen sollten jeden Tag ungefähr 2 bis 2,5 Liter Wasser trinken. Haben die beiden Recht?",
+        "question": "Tatjana hat sich mit Ali zusammen getan und sich nochmals über Wasser informiert. Sie sagen: Wir Menschen sollten jeden Tag ungefähr 2 bis 2,5 Liter Wasser trinken. Haben die beiden Recht?",
         "booleanOfQuestion": true,
         "commentIfRight": "Ja, Ihr habt Recht. Wir sollten jeden Tag mindestens 2 Liter trinken, so dass wir genug Flüssigkeit haben, das unser Körper reibungslos funktioniert. ",
         "commentIfFalse": "Um unseren Körper gesund zu halten, ist es wichtig, jeden Tag ausreichend zu trinken. Aus diesem Grund sollten wir jeden Tag zwei Liter Wasser trinken. Das hilft unserem Körper, seine Aufgaben richtig zu erledigen, was uns ein positives Gefühl gibt. "
