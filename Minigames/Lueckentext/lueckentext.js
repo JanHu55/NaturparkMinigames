@@ -23,6 +23,9 @@ var cloze;
         inputArr = data;
         inputMix = data;
         for (let i = 0; i < data.length; i++) {
+            text.innerHTML += data[i].text;
+            text.append(createInput(data[i].input, i));
+            text.innerHTML += data[i].text_after;
             text.append(data[i].text);
             text.append(createInput(data[i].input, i));
             // console.log(data[i].input);
@@ -39,7 +42,7 @@ var cloze;
         // let inputID: string = "ipt" + _inputCount;
         // get size of word and fit input field to it
         let inputText = document.createElement("span");
-        inputText.innerText = _dataInput;
+        inputText.innerHTML = _dataInput;
         text.appendChild(inputText);
         // console.log(inputText.offsetWidth);
         setInput.style.width = inputText.offsetWidth.toString() + "px";

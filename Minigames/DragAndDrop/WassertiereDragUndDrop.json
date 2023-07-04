@@ -19,7 +19,6 @@
         "text": "Otter",
         "column": "four"
     },
-
     {
         "text": "Frosch",
         "column": "two"
@@ -32,8 +31,7 @@
         "text": "Salamander",
         "column": "two"
     },
-
-        {
+    {
         "text": "Ente",
         "column": "three"
     },
@@ -45,6 +43,4 @@
         "text": "Graugans",
         "column": "three"
     }
-    
-
 ]

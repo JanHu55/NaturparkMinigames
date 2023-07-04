@@ -37,6 +37,9 @@ namespace cloze {
 
         for (let i: number = 0; i < data.length; i++) {
 
+            text.innerHTML += data[i].text;
+            text.append(createInput(data[i].input, i));
+            text.innerHTML += data[i].text_after;
             text.append(data[i].text);
             text.append(createInput(data[i].input, i));
             // console.log(data[i].input);
@@ -58,7 +61,7 @@ namespace cloze {
 
         // get size of word and fit input field to it
         let inputText: HTMLSpanElement = <HTMLSpanElement>document.createElement("span");
-        inputText.innerText = _dataInput;
+        inputText.innerHTML = _dataInput;
         text.appendChild(inputText);
         // console.log(inputText.offsetWidth);
         setInput.style.width = inputText.offsetWidth.toString() + "px";
