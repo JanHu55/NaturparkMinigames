@@ -1,52 +1,42 @@
 [
     {
-        "text": "Der Beruf des Strohflechters im Hochschwarzwald ist eine alte ",
-        "input": "Handwerkskunst. ",
-        "text_after": ""
+        "text": "Der Beruf der Strohflechterinnen und Strohflechter im Hochschwarzwald ist eine alte ",
+        "input": "Handwerkskunst",
+        "text_after": ". "
     },
     {
-        "text": "Strohflechter machen ",
-        "input": "Hüte ",
-        "text_after": ", "
-    },
-    {
-        "text": "",
-        "input": "Körbe ",
-        "text_after": "und "
-    },
-    {
-        "text": "Dekoration aus ",
-        "input": "Stroh. ",
-        "text_after": ""
+        "text": "Strohflechterinnen und Strohflechter stellen Hüte, ",
+        "input": "Körbe",
+        "text_after": " und Dekoration aus Stroh her. "
     },
     {
         "text": "Sie verwenden traditionelle ",
-        "input": "Werkzeuge ",
-        "text_after": "und Techniken. "
+        "input": "Werkzeuge",
+        "text_after": " und Techniken. "
     },
     {
         "text": "Dieser Beruf erfordert Geschicklichkeit und Geduld. Obwohl nicht so viele Menschen diese Produkte ",
-        "input": "kaufen ",
-        "text_after": ", gibt es immer noch "
+        "input": "kaufen",
+        "text_after": ", "
     },
     {
-        "text": "",
-        "input": "Strohflechter ",
-        "text_after": "die das Handwerk weiterführen."
+        "text": "gibt es immer noch ",
+        "input": "Strohflechterinnen und Strohflechter",
+        "text_after": ", die das Handwerk weiterführen. "
     },
     {
         "text": "Sie arbeiten in ",
-        "input": "kleinen Werkstätten ",
-        "text_after": "und verkaufen ihre Produkte auf "
+        "input": "kleinen Werkstätten",
+        "text_after": " und verkaufen "
     },  
     {
-        "text": "",
-        "input": "Märkten. ",
-        "text_after": ""
+        "text": "ihre Produkte auf ",
+        "input": "Märkten",
+        "text_after": ". "
     },   
     {
-        "text": " Der Beruf des Strohflechters hilft, alte Handwerkskunst zu ",
-        "input": "bewahren ",
-        "text_after": "und ist wichtig für die Region. "
+        "text": "Der Beruf der Strohflechterinnen und Strohflechter hilft, alte Handwerkskunst zu ",
+        "input": "bewahren",
+        "text_after": " und ist wichtig für die Region. "
     }   
 ]

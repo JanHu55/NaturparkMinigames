@@ -1,8 +1,24 @@
 [
+   {
+        "text": "Im Hochschwarzwald hat der Beruf des Bürstenbinders eine lange Geschichte. Die ",
+        "input": "Bürstenbinder",
+        "text_after": "stellen aus natürlichen Materialien, wie Tierborsten und Holz, Bürsten her. "
+    },
+    {
+        "text": "Die meisten Bürstenbinder waren in kleinen ",
+        "input": "Werkstätten",
+        "text_after": " "
+    },
+    {
+        "text": "und ",
+        "input": "Familienbetrieben ",
+        "text_after": "tätig. "
+    },
+    
     {
         "text": "Vor etwa 121 Jahren, im Jahr 1902, begann die Familie Zahoransky im Hochschwarzwald Bürsten herzustellen. Sie hatten eine eigene kleine ",
-        "input": "Werkstatt ",
-        "text_after": "und "
+        "input": "Werkstatt",
+        "text_after": " und "
     },
     {
         "text": "produzierten viele verschiedene ",
@@ -11,38 +27,44 @@
     },
     {
         "text": "Die Zahoransky-Familie war so ",
-        "input": "geschickt ",
+        "input": "geschickt",
         "text_after": " darin, Bürsten herzustellen, dass sie berühmt wurden. "
     },
-    {
-        "text": "Menschen aus der ganzen Welt wollten ebenfalls ihre ",
-        "input": "Maschinen ",
-        "text_after": "haben, um Bürsten herzustellen. "
+     {
+        "text": "Durch ihre speziellen Bürstenbinder-Maschinen unterstützte sie andere Bürstenbinder dabei, ihre Arbeit ",
+        "input": "einfacher",
+        "text_after": " zu gestalten. "
     },
+       {
+        "text": "Menschen aus der ganzen Welt wollten ebenfalls ihre ",
+        "input": "Maschinen",
+        "text_after": " haben, um Bürsten herzustellen. "
+    },  
     {
-        "text": "Deshalb eröffneten sie Niederlassungen in verschiedenen ",
+        "text": "Deshalb eröffneten sie Unternehmen in verschiedenen ",
         "input": "Ländern",
         "text_after": ". "
     },
+ 
     {
-        "text": "Die Zahoransky-Familie unterstützte andere Bürstenbinder dabei, ihre Arbeit ",
-        "input": "einfacher ",
-        "text_after": "zu gestalten. "
-    },
-    {
-        "text": "Ihre Maschinen ermöglichten es ihnen, ",
-        "input": "mehr Bürsten ",
-        "text_after": "herzustellen und diese zu verbessern. "
+        "text": "Ihre Maschinen ermöglichten es, ",
+        "input": "mehr Bürsten",
+        "text_after": " herzustellen und diese zu verbessern. "
     },
   {
         "text": "Heutzutage können Bürstenbinder weltweit die Zahoransky-Maschinen verwenden, um ",
-        "input": "hervorragende Bürsten ",
-        "text_after": "herzustellen. "
-    },{
+        "input": "hervorragende Bürsten",
+        "text_after": " herzustellen. "
+    },
+   {
         "text": "Heute ist Zahoransky ein großes ",
         "input": "Unternehmen",
         "text_after": ", das vielen Menschen dabei hilft, Bürsten herzustellen. "
+    },
+   {
+        "text": "Heutzutage werden die meisten Bürsten von Maschinen hergestellt. Es gibt aber noch einige Bürstenbinder, die den Beruf immer noch in ",
+        "input": "Handarbeit",
+        "text_after": " ausüben."
     }
-   
     
 ]

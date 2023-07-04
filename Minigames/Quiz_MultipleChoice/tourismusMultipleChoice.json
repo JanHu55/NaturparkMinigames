@@ -1,8 +1,8 @@
 [
     {
-      "question": "Was sind die Vorteile von Tourismus?",
+      "question": "Was ist ein Vorteil von Tourismus?",
       "answers": [
-            { "text": "ermöglicht Reisen", "correct": true
+            { "text": "ist gut für die Wildtiere", "correct": false
             },
             { "text": "ist kostenlos", "correct": false
             },
@@ -13,15 +13,15 @@
         ]
     },
     {
-      "question": "In welchen Bereichen bringt Tourismus Geld ein?",
+      "question": "In welchem Bereich bringt Tourismus kein Geld ein?",
       "answers": [
-            { "text": "Restaurants", "correct": true
+            { "text": "Restaurants", "correct": false
             },
-            { "text": "Hotels", "correct": true
+            { "text": "Hotels", "correct": false
             },
-            { "text": "Wandern", "correct": false
+            { "text": "Wandern", "correct": true
             },
-            { "text": "Museen", "correct": true
+            { "text": "Museen", "correct": false
             }
         ]
     },
@@ -52,15 +52,15 @@
         ]
     },
     {
-      "question": "So reise ich rücksichtsvoll:",
+      "question": "So reise ich nicht rücksichtsvoll:",
       "answers": [
-            { "text": "Ich lasse keinen Müll liegen.", "correct": true
+            { "text": "Ich lasse keinen Müll liegen.", "correct": false
             },
-            { "text": "Ich zelte wild.", "correct": false
+            { "text": "Ich zelte wild.", "correct": true
             },
-            { "text": "Ich bleibe in Naturschutzgebieten auf den Wegen.", "correct": true
+            { "text": "Ich bleibe in Naturschutzgebieten auf den Wegen.", "correct": false
             },
-            { "text": "Ich halte mich an die Regeln vor Ort.", "correct": true
+            { "text": "Ich halte mich an die Regeln vor Ort.", "correct": false
             }
         ]
     }

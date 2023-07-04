@@ -15,18 +15,18 @@
     {
       "question": "Wo arbeiten Strohflechter im Hochschwarzwald und verkaufen ihre Produkte?",
       "answers": [
-            { "text": "Kleine Werkstätten und auf Märkten", "correct": true
+            { "text": "Kleinen Werkstätten und Märkten", "correct": true
             },
             { "text": "Schulen und Bibliotheken", "correct": false
             },
             { "text": "Restaurants und Cafés", "correct": false
             },
-            { "text": "Supermärkte und Einkaufszentren", "correct": false
+            { "text": "Supermärkten und Einkaufszentren", "correct": false
             }
         ]
     },
     {
-      "question": "Welche Art von Bürsten werden vom Bürstenbinder hergestellt?",
+      "question": "Welche Art von Gegenständen werden vom Bürstenbinder hergestellt?",
       "answers": [
             { "text": "Spielzeugautos und Puppen", "correct": false
             },
@@ -34,7 +34,7 @@
             },
             { "text": "Elektronikgeräte und Computer", "correct": false
             },
-            { "text": "Haushaltsbürsten und Besen und Zahnbürsten", "correct": true
+            { "text": "Haushaltsbürsten, Besen und Zahnbürsten", "correct": true
             }
           ]
     },

@@ -2,19 +2,19 @@
     {
         "question": "Deutschland ist der größte Milcherzeuger der EU",
         "booleanOfQuestion": true,
-        "commentIfRight": "Korrekt!",
-        "commentIfFalse": "Im Jahr 2021 wurden rund 31,9 Millionen Tonnen Milch an die Molkereien geliefert"
+        "commentIfRight": "Genau! Im Jahr 2021 wurden rund 31,9 Millionen Tonnen Milch an die Molkereien geliefert",
+        "commentIfFalse": "Deutschland ist der größte Milcherzeuger der EU. Im Jahr 2021 wurden rund 31,9 Millionen Tonnen Milch an die Molkereien geliefert."
     },
     {
-        "question": "Die Fruchtfolge ist die bestimmte Aufeinanderfolge verschiedener Pflanzen auf den Feldern der Bauern.",
+        "question": "Die Fruchtfolge ist die bestimmte Aufeinanderfolge verschiedener Pflanzen auf den Feldern der Bäuerinnen und Bauern.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Korrekt!",
-        "commentIfFalse": "Durch die Fruchtfolge bleiben die Böden fruchtbarer da die verschiedenen Pflanzen unterschiedliche Nährstoffe aus dem Boden brauchen."
+        "commentIfRight": "Sehr gut! Durch die Fruchtfolge bleiben die Böden fruchtbarer, da die verschiedenen Pflanzen unterschiedliche Nährstoffe aus dem Boden brauchen.",
+        "commentIfFalse": "Durch die Fruchtfolge bleiben die Böden fruchtbarer, da die verschiedenen Pflanzen unterschiedliche Nährstoffe aus dem Boden brauchen."
     },
     {
-        "question": "Tiefe Bodenbearbeitung von Maschienen, Dünger und Pflanzenschutzmittel machen dem Regenwurm im Boden nichts aus.",
+        "question": "Tiefe Bodenbearbeitung von Maschienen, Düngern und Pflanzenschutzmitteln machen dem Regenwurm im Boden nichts aus.",
         "booleanOfQuestion": false,
-        "commentIfRight": "Korrekt!",
-        "commentIfFalse": "Bodenbearbeitung stört die Regenwürmer und zerstört ihr Kanalsystem was zu einer Bodenverdichtung führt. Außerdem reagieren Regenwürmer sensibel auf Dünge- und Pestizideinsätze."
+        "commentIfRight": "Genau! Die Bodenbearbeitung stört die Regenwürmer und zerstört ihre Kanalsysteme, was zu einer Bodenverdichtung führt. Außerdem reagieren Regenwürmer sensibel auf Dünger.",
+        "commentIfFalse": "Die Bodenbearbeitung stört die Regenwürmer und zerstört ihre Kanalsysteme, was zu einer Bodenverdichtung führt. Außerdem reagieren Regenwürmer sensibel auf Dünger."
     }
 ]
