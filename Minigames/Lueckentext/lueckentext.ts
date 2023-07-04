@@ -7,15 +7,9 @@ namespace cloze {
 
     }
 
-    //let game: HTMLDivElement = <HTMLDivElement>document.getElementById("game");
     let text: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("text");
-    //let input: HTMLInputElement = <HTMLInputElement>document.getElementById("input");
-    let submit = document.getElementById("submit");
-    submit.addEventListener("click", checkInput);
 
-    let correctCount: number = 0;
-
-    let inputArr: TextIpt[] = [];
+    // let inputArr: TextIpt[] = [];
     let inputMix: TextIpt[] = [];
 
     let buttDiv: HTMLDivElement = <HTMLDivElement>document.getElementById("backButton")
@@ -32,7 +26,7 @@ namespace cloze {
 
         let response: Response = await fetch(_url);
         let data: TextIpt[] = await response.json();
-        inputArr = data;
+        // inputArr = data;
         inputMix = data;
 
         for (let i: number = 0; i < data.length; i++) {
@@ -40,112 +34,94 @@ namespace cloze {
             text.innerHTML += data[i].text;
             text.append(createInput(data[i].input, i));
             text.innerHTML += data[i].text_after;
-            text.append(data[i].text);
-            text.append(createInput(data[i].input, i));
-            // console.log(data[i].input);
-            // console.log(inputArr[i].input);
-            text.append(data[i].text_after);
 
         }
-
         showAllWords(inputMix);
-        console.log(inputMix);
-        console.log(inputArr);
+        addClickEvents();
     }
 
-    function createInput(_dataInput: string, _inputCount: number): HTMLInputElement {
-
-        // create Input Stuff
-        let setInput: HTMLInputElement = <HTMLInputElement>document.createElement("input");
-        // let inputID: string = "ipt" + _inputCount;
+    function createInput(_dataInput: string, _inputCount: number): HTMLSpanElement {
 
         // get size of word and fit input field to it
-        let inputText: HTMLSpanElement = <HTMLSpanElement>document.createElement("span");
-        inputText.innerHTML = _dataInput;
-        text.appendChild(inputText);
-        // console.log(inputText.offsetWidth);
-        setInput.style.width = inputText.offsetWidth.toString() + "px";
-        inputText.remove();
-
-        setInput.setAttribute("id", _dataInput);
-        // setInput.setAttribute("id", inputID);
-
-        return setInput;
-
-    }
-
-    function checkInput(): void {
-
-        let input: HTMLCollectionOf<HTMLInputElement> = <HTMLCollectionOf<HTMLInputElement>>document.getElementsByTagName("input");
-
-        console.log("Checking Input");
-        removeFalseClass();
-
-        for (let i: number = 0; i < input.length; i++) {
-
-            // make id a number (from string)
-            // let inputID: number = +input[i].id;
-
-
-            console.log(input[i].value.toLowerCase());
-            // console.log(inputArr[inputID].input.toLowerCase());
-            // console.log(inputID);
-            // console.log(input[i].id);
-
-            // if (input[i].value.toLowerCase() == inputArr[inputID].input.toLowerCase()) {
-            if (input[i].value.toLowerCase() == input[i].id.toLowerCase()) {
-
-                correctCount++;
-                // let insertP: Text = <Text>document.createTextNode(inputArr[inputID].input);
-                let insertP: Text = <Text>document.createTextNode(input[i].id);
-                console.log(insertP);
-
-                text.insertBefore(insertP, input[i]);
-                input[i].value = "";
-                input[i].classList.add("done");
-
-                console.log("Correct!");
-
-                if (correctCount == inputArr.length) {
-                    console.log("You won!");
-                }
-            } else {
-                // console.log(input[i].id);
-                input[i].classList.add("false");
-            }
+        let inputSpan: HTMLSpanElement = <HTMLSpanElement>document.createElement("span");
+        inputSpan.setAttribute("id", _dataInput);
+        inputSpan.setAttribute("class", "input");
+        // inputSpan.addEventListener("click", () => { checkInput(_dataInput); });
+        let output: string = "";
+        for (let i = 0; i < _dataInput.length; i++) {
+            output += '_';
         }
-    }
+        inputSpan.innerHTML = output;
 
-    function removeFalseClass() {
+        // text.appendChild(inputSpan);
 
-        let falseClasses: HTMLCollectionOf<HTMLInputElement> = <HTMLCollectionOf<HTMLInputElement>>document.getElementsByClassName("false");
+        return inputSpan;
 
-        for (let i: number = 0; i < falseClasses.length; i++) {
-            falseClasses[0].classList.remove("false");
-        }
     }
 
     function showAllWords(allWords: TextIpt[]): void {
 
         let wordsDiv: HTMLDivElement = <HTMLDivElement>document.getElementById("words");
-        let words: HTMLParagraphElement = <HTMLParagraphElement>document.createElement("p");
-        let wordsString: string;
+        wordsDiv.setAttribute("id", "allWords");
 
         let wordsRandArray: TextIpt[] = allWords;
         wordsRandArray.sort(() => .5 - Math.random());
 
         for (let i = 0; i < wordsRandArray.length; i++) {
-
+            let thisWord: HTMLParagraphElement = <HTMLParagraphElement>document.createElement("p");
             if (i == 0) {
-                wordsString = wordsRandArray[i].input;
+                thisWord.innerHTML = wordsRandArray[i].input;
             } else {
-                wordsString = wordsString + " | " + wordsRandArray[i].input;
+                thisWord.innerHTML = wordsRandArray[i].input;
             }
+            thisWord.addEventListener("click", () => checkInput(wordsRandArray[i].input, false));
+            wordsDiv.appendChild(thisWord);
         }
-        words.innerHTML = wordsString;
-        wordsDiv.appendChild(words);
     }
 
+    function addClickEvents(): void {
+
+        let spans = document.querySelectorAll("span");
+        spans.forEach(spans => {
+            spans.addEventListener("click", () => checkInput(spans.id, true));
+        }
+        );
+    }
+
+
+    let string1: string = "leer";
+    let string2: string = "leer";
+
+    function checkInput(_dataInput: string, isInText: boolean): void {
+
+        // console.log("Checking input");
+        // console.log(_dataInput);
+        if (isInText) {
+            string1 = _dataInput;
+        } else {
+            string2 = _dataInput;
+        }
+
+        console.log("string1: " + string1);
+        console.log("string2: " + string2);
+
+        if (string1 == string2) {
+            let inputSpan: HTMLSpanElement = <HTMLSpanElement>document.getElementById(string1);
+            inputSpan.innerHTML = string1;
+            inputSpan.classList.add("bold");
+            inputSpan.classList.remove("input");
+
+            string1 = "leer";
+            string2 = "leer";
+        }
+
+        if (string2 != "leer") {
+            string1 = "leer";
+            string2 = "leer";
+            // console.log("string1: " + string1);
+            // console.log("string2: " + string2);
+        }
+    }
 
     // reload the page (to restart the game)
     function returnToStart(): void {
