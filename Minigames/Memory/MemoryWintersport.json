@@ -17,7 +17,7 @@
     {
         "id": "4",
         "src": "images/Thema_04/Memory_Ski.jpg",
-        "src2": "Ski- fahren"
+        "src2": "Skifahren"
     },
     {
         "id": "5",
@@ -27,6 +27,6 @@
     {
         "id": "6",
         "src": "images/Thema_04/Memory_Schlittschuh.jpg",
-        "src2": "Schlitt- schuh- laufen"
+        "src2": "Schlitt- schuhlaufen"
     }
 ]
