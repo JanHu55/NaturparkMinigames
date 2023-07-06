@@ -2,20 +2,20 @@
     {
         "question": "Wenn ich im Wald eine schöne Pflanze entdecke, darf ich sie abreißen und mit nach Hause nehmen.",
         "booleanOfQuestion": false,
-        "commentIfRight": "Korrekt! Im Wald sollte man keine Pflanzen abreißen.",
+        "commentIfRight": "Korrekt! Im Wald solltest du keine Pflanzen abreißen.",
         "commentIfFalse": "Um die Natur zu schützen, greife nicht in die Natur ein. Das bedeutet, dass du keine Pflanzen abreißen solltest."
     },
     {
         "question": "Wenn möglich, sollte ich im Wald auf den gekennzeichneten Wegen bleiben.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Super, gut gemacht! So erschreckst du nicht die heimischen Tiere und zertrittst keine Pflanzen.",
-        "commentIfFalse": "Es ist wichtig auf den gekennzeichneten Wegen zu bleiben, um nicht zu sehr in den natürlichen Lebensraum der heimischen Tiere und Pflanzen einzugreifen oder etwas kaputt zu machen."
+        "commentIfRight": "Super, gut gemacht! So erschreckst du die heimischen Tiere nicht und zertrittst keine Pflanzen.",
+        "commentIfFalse": "Es ist wichtig auf den gekennzeichneten Wegen zu bleiben. Dies verhindert, dass du zu sehr in den natürlichen Lebensraum der heimischen Tiere und Pflanzen eingreifst."
     },
     {
         "question": "Wenn ich im Wald Plastik oder anderen Müll finde, hebe ich diesen auf und schmeiße ihn zu Hause in den Mülleimer.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Super, genau so! Nehme gerne beim nächsten Waldspaziergang einen kleinen Müllsack mit und sammle allen Müll den du findest ein. Der Wald wird sich freuen!",
-        "commentIfFalse": "Wir können alle etwas zum Schutz des Waldes beitragen. Schon das Aufsammeln von Plastik oder anderem Müll im Wald kann eine große Hilfe sein um den Wald sauber zu halten. Du kannst zum Beispiel einen kleinen Müllsack zum Waldspaziergang mitnehmen und allen Müll den du findest einsammeln."
+        "commentIfRight": "Super! Nehme gerne beim nächsten Waldspaziergang einen kleinen Müllsack mit und sammle allen Müll den du findest ein. Der Wald wird sich freuen!",
+        "commentIfFalse": "Schon das Aufsammeln von Plastik oder anderem Müll im Wald kann eine große Hilfe sein um den Wald sauber zu halten. Du kannst zum Beispiel einen kleinen Müllsack zum Waldspaziergang mitnehmen und allen Müll den du findest einsammeln."
     },
     {
         "question": "Wenn ich ein Tier sehe, kann ich versuchen es zu streicheln.",
@@ -32,13 +32,13 @@
     {
         "question": "Viele Menschen gehen im Winter gerne Skifahren. Es gibt Menschen, die durch die Touristinnen und Touristen Geld verdienen.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Korrekt! Viele Menschen die in Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe.",
-        "commentIfFalse": "Viele Menschen die in Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe."
+        "commentIfRight": "Korrekt! Viele Menschen die in der Nähe von Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe.",
+        "commentIfFalse": "Viele Menschen die in der Nähe von Ski-Gebieten leben, finden dort auch Arbeit: zum Beispiel beim Tickets verkaufen, in Ski-Geschäften oder in einem Hotel in der Nähe."
     },
     {
         "question": "Skifahren und das Anlegen von Pisten schadet den Pflanzen und Tieren des Waldes nicht, weil sich die Pisten nicht im natürlichen Lebensraum von Pflanzen und Tieren befinden.",
         "booleanOfQuestion": false,
-        "commentIfRight": "Korrekt! Ski-Pisten befinden sich oft in den natürlichen Lebensräumen von Tieren wie Rehe, Hasen, Füchse und heimische Vogelarten sowie Pflanzen. Das Bauen von Pisten zerstört den Lebensraum vieler Tiere und Pflanzen.",
-        "commentIfFalse": "Ski-Pisten befinden sich oft in den natürlichen Lebensräumen von Tieren wie Rehe, Hasen, Füchse und heimische Vogelarten. Außerdem werden durch das Anlegen von Ski-Pisten heimische Pflanzen vernichtet. "
+        "commentIfRight": "Korrekt! Ski-Pisten befinden sich oft in den natürlichen Lebensräumen von Tieren wie Rehe, Hasen, Füchse und Vögeln sowie Pflanzen. Das Bauen von Pisten zerstört den Lebensraum vieler Tiere und Pflanzen.",
+        "commentIfFalse": "Ski-Pisten befinden sich oft in den natürlichen Lebensräumen von Tieren wie Rehe, Hasen, Füchse und Vögeln. Außerdem werden durch das Anlegen von Ski-Pisten heimische Pflanzen vernichtet. "
     }
 ]
