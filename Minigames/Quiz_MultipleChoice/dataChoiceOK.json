@@ -30,7 +30,7 @@
       "answers": [
             { "text": "Holz wird geerntet und dafür werden neue Bäume gepflanzt.", "correct": true
             },
-            { "text": "Es wird eine Gastwirtschaft im Wald gebaut.", "correct": false
+            { "text": "Im Wald wird eine Gastwirtschaft gebaut.", "correct": false
             },
             { "text": "Es gibt einen Kletterwald.", "correct": false
             },
