@@ -2,7 +2,7 @@
     {
         "id": "1",
         "src": "images/Thema_04/Memory_Schlitten.jpg",
-        "src2": "Schlittenfahren"
+        "src2": "Schlitten- fahren"
     },
     {
         "id": "2",
@@ -17,16 +17,16 @@
     {
         "id": "4",
         "src": "images/Thema_04/Memory_Ski.jpg",
-        "src2": "Skifahren"
+        "src2": "Ski- fahren"
     },
     {
         "id": "5",
         "src": "images/Thema_04/Memory_Snowboard.jpg",
-        "src2": "Snowboarden"
+        "src2": "Snow- boarden"
     },
     {
         "id": "6",
         "src": "images/Thema_04/Memory_Schlittschuh.jpg",
-        "src2": "Schlittschuhlaufen"
+        "src2": "Schlitt- schuh- laufen"
     }
 ]
