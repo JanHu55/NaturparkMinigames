@@ -8,8 +8,8 @@
     {
         "question": "Der Zug ist besser für die Umwelt als das Flugzeug.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Richtig! Der Zug ist umweltfreundlicher als das Flugzeug, da er weniger CO2 ausstößt.",
-        "commentIfFalse": "Der Zug ist umweltfreundlicher als das Flugzeug, da er weniger CO2 ausstößt."
+        "commentIfRight": "Richtig! Der Zug ist umweltfreundlicher als das Flugzeug, da er weniger CO<sub>2</sub> ausstößt.",
+        "commentIfFalse": "Der Zug ist umweltfreundlicher als das Flugzeug, da er weniger CO<sub>2</sub> ausstößt."
     },
     {
         "question": "Das Schiff ist besser für die Umwelt als das Fahrrad.",
