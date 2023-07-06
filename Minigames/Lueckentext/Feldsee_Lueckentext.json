@@ -22,17 +22,17 @@
     {
         "text": "Die wohl bekannteste Pflanze im Feldsee ist das ",
         "input": "Stachelsporige Brachsenkraut",
-        "text_after": ". Weil diese unter Naturschutz steht, ist es unter anderem verboten im Feldsee zu baden. "
+        "text_after": ". Weil diese unter Naturschutz steht, ist es verboten im Feldsee zu baden. "
     },
     {
-        "text": "Auch für vereinzelte Krebs-, Muschel- und Fischarten dient der See als Lebensraum. ",
-        "input": "Die Erbsenmuschel, der Ruderfußkrebs und der Seesaibling",
-        "text_after": " sind typische Lebewesen am Feldsee."
+        "text": "Auch für vereinzelte Krebs-, Muschel- und Fischarten dient der See als Lebensraum. Die Erbsenmuschel, ",
+        "input": "der Ruderfußkrebs und der Seesaibling",
+        "text_after": " sind typische Lebewesen am Feldsee. "
     },
     {
-        "text": "Umgeben ist der Feldsee von einem sich selbst überlassenen ",
+        "text": "Umgeben ist der Feldsee von einem ",
         "input": "Bannwald",
-        "text_after": " aus Buchen, Tannen, Fichten und Bergahorn. Der Mensch greift hier nicht in den Baum-, Pflanzen- oder Tierbestand ein. "
+        "text_after": ", der sich selbst überlassen ist. Der Mensch greift hier nicht in den Bestand von Bäumen, Pflanzen oder Tieren ein. Hier wachsen Buchen, Tannen, Fichten und Bergahorn."
     }
     
 ]
