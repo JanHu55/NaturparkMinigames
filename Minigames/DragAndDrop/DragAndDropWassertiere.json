@@ -7,6 +7,14 @@
         "text": "Bachforelle",
         "column": "one"
     },
+     {
+        "text": "Haubentaucher",
+        "column": "three"
+    },
+        {
+        "text": "Frosch",
+        "column": "two"
+    },
     {
         "text": "Seesaibling",
         "column": "one"
@@ -16,12 +24,13 @@
         "column": "one"
     },
     {
-        "text": "Otter",
+        "text": "Fischotter",
         "column": "four"
     },
-    {
-        "text": "Frosch",
-        "column": "two"
+
+     {
+        "text": "Ente",
+        "column": "three"
     },
     {
         "text": "Kröte",
@@ -30,14 +39,6 @@
     {
         "text": "Salamander",
         "column": "two"
-    },
-    {
-        "text": "Ente",
-        "column": "three"
-    },
-    {
-        "text": "Haubentaucher",
-        "column": "three"
     },
     {
         "text": "Graugans",
