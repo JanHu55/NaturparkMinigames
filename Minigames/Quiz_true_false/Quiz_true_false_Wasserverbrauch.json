@@ -1,6 +1,6 @@
 [
 	{
-        "question": "Tatjana hat sich mit Ali zusammengetan und sich nochmals über Wasser informiert. Sie sagen: Wir Menschen sollten jeden Tag ungefähr 2 bis 2,5 Liter Wasser trinken. Haben die beiden Recht?",
+        "question": "Tatjana und Ali haben sich nochmals über Wasser informiert. Sie sagen: Wir Menschen sollten jeden Tag ungefähr 2 bis 2,5 Liter Wasser trinken. Haben die beiden Recht?",
         "booleanOfQuestion": true,
         "commentIfRight": "Ja, ihr habt Recht. Wir sollten jeden Tag mindestens 2 Liter trinken.",
         "commentIfFalse": "Um unseren Körper gesund zu halten, ist es wichtig, jeden Tag mindestens 2 Liter Wasser zu trinken."
@@ -8,14 +8,14 @@
     {
         "question": "Thaisa und Alex haben in einem Artikel gelesen, dass man im Sommer mehr als 2 Liter trinken muss. Stimmt das?",
         "booleanOfQuestion": true,
-        "commentIfRight": "Ja, der Artikel hat Recht. Es ist besonders wichtig, im Sommer mehr Flüssigkeit zu trinken.",
-        "commentIfFalse": "Leider liegst du falsch. Im Sommer ist es wichtig, mehr Wasser zu trinken. Bei warmen Temperaturen schwitzen wir viel mehr, wodurch wir mehr Flüssigkeit verlieren."
+        "commentIfRight": "Ja, der Artikel hat Recht. Bei warmen Temperaturen schwitzen wir viel mehr als im Winter, wodurch wir mehr Flüssigkeit verlieren. eshalb müssen wir im Sommer mehr Wasser trinken.",
+        "commentIfFalse": "Leider liegst du falsch.  Bei warmen Temperaturen schwitzen wir viel mehr als im Winter, wodurch wir mehr Flüssigkeit verlieren. Deshalb müssen wir im Sommer mehr Wasser trinken."
     },
     {
-        "question": "Die Klasse von Tatjana, Thaisa, Ali und Alex überlegt sich, wie viel Wasser sie täglich verbrauchen. Sie kommen zu dem Entschluss, dass es mindestens 65 Liter am Tag sind. Glaubst du, das stimmt?",
+        "question": "Ali und Alex überlegen sich, wie viel Wasser jede Person täglich verbraucht. Sie kommen zu dem Entschluss, dass es etwa 65 Liter am Tag sind. Glaubst du, das stimmt?",
         "booleanOfQuestion": false,
-        "commentIfRight": "Ja, du hast Recht. Wir brauchen sogar das Doppelte davon, also bis zu 130 Liter Wasser durchschnittlich täglich. Das wären ungefähr 630 Gläser Wasser oder 13 Eimer Wasser.",
-        "commentIfFalse": "Leider liegen ihr alle falsch. Wir verbrauchen bis zu 130 Liter Wasser täglich, von Waschen bis hin zum Essen und Trinken. Wir verwenden Wasser im täglichen Leben sehr vielfältig."
+        "commentIfRight": "Ja, du hast Recht. Wir verbrauchen sogar bis zu 130 Liter Wasser täglich. Das wären ungefähr 630 Gläser Wasser oder 13 Eimer Wasser pro Tag.",
+        "commentIfFalse": "Wir verbrauchen sogar bis zu 130 Liter Wasser täglich. Das wären ungefähr 630 Gläser Wasser oder 13 Eimer Wasser pro Tag. "
     },
     {
         "question": "Ali und Chris finden: Wasser brauchen wir nur zum Trinken. Glaubst du, Ali und Chris haben Recht?",
