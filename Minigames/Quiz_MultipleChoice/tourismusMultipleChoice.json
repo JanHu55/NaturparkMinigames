@@ -30,11 +30,11 @@
       "answers": [
             { "text": "Entstehung neuer Vereine", "correct": false
             },
-            { "text": "Die Pflege der Naturschutzgebiete", "correct": false
+            { "text": "die Pflege der Naturschutzgebiete", "correct": false
             },
-            { "text": "Mehr Staus durch viel Verkehr auf den Straßen", "correct": true
+            { "text": "mehr Staus durch viel Verkehr auf den Straßen", "correct": true
             },
-            { "text": "Die Verbesserung der öffentlichen Verkehrsmittel", "correct": false
+            { "text": "die Verbesserung der öffentlichen Verkehrsmittel", "correct": false
             }
         ]
     },
