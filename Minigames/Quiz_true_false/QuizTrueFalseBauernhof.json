@@ -2,14 +2,14 @@
     {
         "question": "Deutschland ist der größte Milcherzeuger der EU",
         "booleanOfQuestion": true,
-        "commentIfRight": "Genau! Im Jahr 2021 wurden rund 31,9 Millionen Tonnen Milch an die Molkereien geliefert",
+        "commentIfRight": "Genau! Im Jahr 2021 wurden rund 31,9 Millionen Tonnen Milch an die Molkereien geliefert.",
         "commentIfFalse": "Deutschland ist der größte Milcherzeuger der EU. Im Jahr 2021 wurden rund 31,9 Millionen Tonnen Milch an die Molkereien geliefert."
     },
     {
-        "question": "Die Fruchtfolge ist die bestimmte Aufeinanderfolge verschiedener Pflanzen auf den Feldern der Bäuerinnen und Bauern.",
+        "question": "Die \"Fruchtfolge\" ist die bestimmte Reihenfolge nacheinander angepflanzter Pflanzen auf den Feldern der Bäuerinnen und Bauern.",
         "booleanOfQuestion": true,
-        "commentIfRight": "Sehr gut! Durch die Fruchtfolge bleiben die Böden fruchtbarer, da die verschiedenen Pflanzen unterschiedliche Nährstoffe aus dem Boden brauchen.",
-        "commentIfFalse": "Durch die Fruchtfolge bleiben die Böden fruchtbarer, da die verschiedenen Pflanzen unterschiedliche Nährstoffe aus dem Boden brauchen."
+        "commentIfRight": "Sehr gut! Auf einem Feld sollten nicht immer die gleichen Pflanzen angebaut werden. Durch die Fruchtfolge bleiben die Böden fruchtbarer, da die verschiedenen Pflanzen unterschiedliche Nährstoffe aus dem Boden brauchen.",
+        "commentIfFalse": "Auf einem Feld sollten nicht immer die gleichen Pflanzen angebaut werden. Durch die Fruchtfolge bleiben die Böden fruchtbarer, da die verschiedenen Pflanzen unterschiedliche Nährstoffe aus dem Boden brauchen."
     },
     {
         "question": "Tiefe Bodenbearbeitung von Maschienen, Düngern und Pflanzenschutzmitteln machen dem Regenwurm im Boden nichts aus.",
