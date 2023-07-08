@@ -7,7 +7,12 @@
     {
         "text": "Über tausende von Jahren wurde Gesteinsmaterial durch ",
         "input": "Gletscher",
-        "text_after": " abgetragen und ausgehobelt, wodurch der See heute an der tiefsten Stelle bis zu 34 Meter tief ist. "
+        "text_after": " abgetragen und ausgehobelt, "
+    },
+    {
+        "text": "wodurch der See heute an der tiefsten Stelle bis zu ",
+        "input": "34",
+        "text_after": " Meter tief ist. "
     },
     {
         "text": "Der Feldsee liegt auf 1100 Metern Höhe. Deshalb ist er in den ",
@@ -27,7 +32,7 @@
     {
         "text": "Auch für vereinzelte Krebs-, Muschel- und Fischarten dient der See als Lebensraum. Die Erbsenmuschel, ",
         "input": "der Ruderfußkrebs und der Seesaibling",
-        "text_after": " sind typische Lebewesen am Feldsee. "
+        "text_after": " sind typische Lebewesen im Feldsee. "
     },
     {
         "text": "Umgeben ist der Feldsee von einem ",
