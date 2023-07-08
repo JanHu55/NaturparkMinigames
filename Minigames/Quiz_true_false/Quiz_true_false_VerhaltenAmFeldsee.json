@@ -6,21 +6,21 @@
     "commentIfFalse": "Leider verhält sich Jorim falsch. Denn die Umwelt wird verschmutzt, wenn wir Papier in den Wald werfen. Dies kann die Gesundheit von Wildtieren und Pflanzen im Wald beeinträchtigen."
   },
   {
-    "question": "Justin und Samauel füttern die Tiere im Naturpark mit ihrem Vesper. Frau Ahmadi verwarnt die beiden da dies nicht gut für die Tiere ist. Hat Frau Ahmadi Recht? ",
+    "question": "Justin und Samuel füttern die Tiere im Naturpark mit ihrem Vesper. Frau Ahmadi verwarnt die beiden da dies nicht gut für die Tiere ist. Hat Frau Ahmadi Recht? ",
     "booleanOfQuestion": true,
-    "commentIfRight": "Ja, Frau Ahmadi hat Recht mit ihrer Aussage, Tiere im Naturpark haben die Möglichkeit, ihre natürlichen Nahrungsquellen zu finden und zu nutzen. Wir stören ihre natürlichen Essgewohnheiten, wenn wir ihnen zusätzliches Futter geben. Dies kann dazu führen, dass sie sich auf unsere Nahrungsmittel verlassen und ihre natürlichen Instinkte zum Jagen oder Sammeln verlieren.",
-    "commentIfFalse": "Leider verhaltet sie sich flasch. Im Naturpark haben Tiere die Chance, ihre natürlichen Nahrungsquellen zu entdecken und zu nutzen. Wenn wir ihnen zusätzliches Futter geben, stören wir ihre natürlichen Essgewohnheiten. Dies kann dazu führen, dass sie ihre natürlichen Instinkte zum Jagen oder Sammeln verlieren und sich auf unsere Nahrungsmittel verlassen."
+    "commentIfRight": "Ja, Frau Ahmadi hat Recht. Im Naturpark gibt es natürliche Nahrungsquellen für die Tiere. Wenn wir ihnen zusätzliches Futter geben stören wir ihre natürlichen Essgewohnheiten. Dies kann dazu führen, dass sie sich auf unsere Nahrungsmittel verlassen und ihre natürlichen Instinkte zum Jagen oder Sammeln verlieren.",
+    "commentIfFalse": "Frau Ahmadi hat recht. Im Naturpark gibt es natürliche Nahrungsquellen für die Tiere. Wenn wir ihnen zusätzliches Futter geben stören wir ihre natürlichen Essgewohnheiten. Dies kann dazu führen, dass sie sich auf unsere Nahrungsmittel verlassen und ihre natürlichen Instinkte zum Jagen oder Sammeln verlieren."
   },
   {
-    "question": "Jean und Ivan sehen den tollen Feldsee und bei dem heißen Wetter wollen sie sich abkühlen. Lili aus ihrer Klasse stoppt sie und sagt ihnen, dass es nicht erlaubt ist im Feldsee zu baden. Hat Lili recht? ",
+    "question": "Jan und Ivan sehen den tollen Feldsee und bei dem heißen Wetter wollen sie sich abkühlen. Lili aus ihrer Klasse stoppt sie und sagt ihnen, dass es nicht erlaubt ist im Feldsee zu baden. Hat Lili recht? ",
     "booleanOfQuestion": true,
     "commentIfRight": "Ja, das stimmt. Lili hat recht. Man darf nicht im Fledsee schwimmen, da dort spezielle Wasserpflanzen wachsen und unter Naturschutz stehen, wie zum Beispiel das Stachelsporige Brachsenkarut.",
-    "commentIfFalse": "Leider ist das falsch. Es ist verboten, im Fledsee zu schwimmen, da in diesem Gebiet Wasserpflanzen wachsen und unter Naturschutz stehen, wie das Stachelsporige Brachsenkarut."
+    "commentIfFalse": "Leider ist das falsch. Es ist verboten, im Fledsee zu schwimmen, da dort spezielle Wasserpflanzen wachsen und unter Naturschutz stehen, wie zum Beispiel das Stachelsporige Brachsenkarut."
   },
   {
-    "question": "Isabella und Aisha unterhalten sich extrem laut im Wald und schreien herum. Verhalten die beiden sich richtig? ",
+    "question": "Isabella und Aisha unterhalten sich extrem laut im Wald und schreien herum. Verhalten sich die beiden richtig? ",
     "booleanOfQuestion": false,
     "commentIfRight": "Du hast völlig Recht. Isabella und Aisha verhalten sich im Naturpark unangemessen. Laute Geräusche können die Tiere im Naturpark erschrecken.",
-    "commentIfFalse": " Leider liegst du nicht richtig. Laute Geräusche kann Tiere im Naturpark erschrecken oder ihr Verhalten beeinträchtigen."
+    "commentIfFalse": "Leider liegst du nicht richtig. Isabella und Aisha verhalten sich im Naturpark unangemessen. Laute Geräusche können Tiere im Naturpark erschrecken."
   }
 ]
