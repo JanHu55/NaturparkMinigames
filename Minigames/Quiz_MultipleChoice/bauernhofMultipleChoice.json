@@ -47,7 +47,7 @@
             },
             { "text": "Wildbienen leben in Bienenvölkern wie Honigbienen", "correct": true
             },
-            { "text": "Wildbienen betäuben Pflanzen effektiver als Honigbienen", "correct": false
+            { "text": "Wildbienen bestäuben Pflanzen effektiver als Honigbienen", "correct": false
             }
         ]
     }
