@@ -1,7 +1,6 @@
 namespace memoryGame {
 
-    window.addEventListener("load", handleLoad);
-
+    
     interface Card {
         type: string;
         src: string;
@@ -13,34 +12,53 @@ namespace memoryGame {
     let wonPairs: number = 0;
     let clickBoolean: boolean = true;
 
-    let startButton: HTMLButtonElement;
-
+    // let startButton: HTMLButtonElement;
+    
     //array for all cards (empty after cards are on gameboard)
     let cardArray: HTMLDivElement[] = [];
     //array for comparing Cards
     let compareArray: HTMLDivElement[] = [];
+    
+    let startButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("startButton");
+    startButton.addEventListener("click", createCards);
 
-    function handleLoad(_event: Event): void {
-        startButton = <HTMLButtonElement>document.getElementById("startButton");
-        startButton.addEventListener("click", createCards);
+    // window.addEventListener("load", handleLoad);
+    let jsonFile: RequestInfo = new URLSearchParams(window.location.search).get("json");
+    getThema(jsonFile.toString());
+
+    let description: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("description");
+    
+    async function getThema(thema: string): Promise<void> {
+        
+        try {
+            const response: Response = await fetch("text" + thema);
+            if (!response.ok) {
+                throw new Error("Fehler beim Abrufen der Daten");
+            }
+            // let response: Response = await fetch("text" + thema);
+            let data: Text[] = await response.json();
+            description.innerHTML = data[0].text;
+            console.log(data);
+        } catch (error) {
+            // console.log("Fehler beim Abrufen der Daten");
+        }
     }
-
+    
     async function getData(_url: RequestInfo): Promise<Card[]> {
         let response: Response = await fetch(_url);
         let data: Card[] = await response.json();
         return data;
     }
-
+    
     //cards are created
     async function createCards(_event: MouseEvent): Promise<void> {
-
-        let jsonFile: RequestInfo = new URLSearchParams(window.location.search).get("json");
+        
         let cards: Card[] = await getData(jsonFile); //katrin fragen was in Klammer kommt
-        //make button invisible and create gameboard
 
         pairs = cards.length;
         console.log("pairs" + pairs);
 
+        //make button invisible and create gameboard
         let gameBoard: HTMLDivElement = <HTMLDivElement>document.getElementById("gameBoard");
         gameBoard.innerHTML = " ";
         gameBoard.setAttribute("class", "gameGrid");

@@ -31,6 +31,25 @@ let jsonFile1 = new URLSearchParams(window.location.search).get("json1");
 let jsonFile2 = new URLSearchParams(window.location.search).get("json2");
 getData(jsonFile1, jsonFile2);
 
+getThema(jsonFile1.toString());
+
+let description = document.getElementById("description");
+
+async function getThema(thema) {
+
+	try {
+		const response = await fetch("text" + thema);
+		if (!response.ok) {
+			throw new Error("Fehler beim Abrufen der Daten");
+		}
+		// let response: Response = await fetch("text" + thema);
+		let data = await response.json();
+		description.innerHTML = data[0].text;
+		console.log(data);
+	} catch (error) {
+	}
+}
+
 async function getData(_url1, _url2) {
 
 	let response1 = await fetch(_url1);
@@ -89,7 +108,7 @@ function addTouch(list_items) {
 	list_items.forEach((list_items) => {
 
 		list_items.draggable = "true";
-		
+
 		function touchmove(e) {
 			let lists = Array.from(document.querySelectorAll(".list"));
 

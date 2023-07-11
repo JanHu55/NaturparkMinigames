@@ -42,6 +42,21 @@ var paareZuordnen;
     // get data from .json files (later from databank)
     let jsonFile = new URLSearchParams(window.location.search).get("json");
     getJson(jsonFile);
+    getThema(jsonFile.toString());
+    let description = document.getElementById("description");
+    async function getThema(thema) {
+        try {
+            const response = await fetch("text" + thema);
+            if (!response.ok) {
+                throw new Error("Fehler beim Abrufen der Daten");
+            }
+            let data = await response.json();
+            description.innerHTML = data[0].text;
+            console.log(data);
+        }
+        catch (error) {
+        }
+    }
     // implement the cards and audio data in the table 
     function fillCards(_cardsArray1, _cardsArray2) {
         // console.log("Hello World!")

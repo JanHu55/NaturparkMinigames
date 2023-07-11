@@ -57,7 +57,6 @@ function createInput(_dataInput, _inputCount) {
         output += '_';
     }
     inputSpan1.innerHTML = output;
-    // text.appendChild(inputSpan1);
     return inputSpan1;
 }
 function showAllWords(allWords) {

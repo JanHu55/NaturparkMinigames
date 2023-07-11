@@ -48,10 +48,11 @@ namespace QuizTrueFalse {
     //     generateContent(json);
     // }
 
+    let jsonFile: RequestInfo = new URLSearchParams(window.location.search).get("json");
 
     window.addEventListener("load", () => {
-        console.log("Page loading!");
-        let jsonFile: RequestInfo = new URLSearchParams(window.location.search).get("json");
+        // console.log("Page loading!");
+        getThema(jsonFile.toString());
         handleLoad(jsonFile);
     });
     // Oder so: (Dann wird das data.json file direkt eingelesen wenn die Seite lädt)
@@ -59,12 +60,29 @@ namespace QuizTrueFalse {
 
     let data: Item[];
 
+    let description: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("description");
+
+    async function getThema(thema: string): Promise<void> {
+
+        try {
+            const response: Response = await fetch("text" + thema);
+            if (!response.ok) {
+                throw new Error("Fehler beim Abrufen der Daten");
+            }
+            // let response: Response = await fetch("text" + thema);
+            let data: Text[] = await response.json();
+            description.innerHTML = data[0].text;
+            console.log(data);
+        } catch (error) {
+        }
+    }
+
     async function handleLoad(_url: RequestInfo): Promise<void> {
         console.log(_url);
         let response: Response = await fetch(_url);
         let json: Item[] = await response.json();
         data = json;
-    
+
         generateContent(json);
     }
 

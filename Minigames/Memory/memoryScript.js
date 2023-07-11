@@ -1,19 +1,35 @@
 "use strict";
 var memoryGame;
 (function (memoryGame) {
-    window.addEventListener("load", handleLoad);
     let pairs;
     let turnedCards = 0;
     let wonPairs = 0;
     let clickBoolean = true;
-    let startButton;
+    // let startButton: HTMLButtonElement;
     //array for all cards (empty after cards are on gameboard)
     let cardArray = [];
     //array for comparing Cards
     let compareArray = [];
-    function handleLoad(_event) {
-        startButton = document.getElementById("startButton");
-        startButton.addEventListener("click", createCards);
+    let startButton = document.getElementById("startButton");
+    startButton.addEventListener("click", createCards);
+    // window.addEventListener("load", handleLoad);
+    let jsonFile = new URLSearchParams(window.location.search).get("json");
+    getThema(jsonFile.toString());
+    let description = document.getElementById("description");
+    async function getThema(thema) {
+        try {
+            const response = await fetch("text" + thema);
+            if (!response.ok) {
+                throw new Error("Fehler beim Abrufen der Daten");
+            }
+            // let response: Response = await fetch("text" + thema);
+            let data = await response.json();
+            description.innerHTML = data[0].text;
+            console.log(data);
+        }
+        catch (error) {
+            // console.log("Fehler beim Abrufen der Daten");
+        }
     }
     async function getData(_url) {
         let response = await fetch(_url);
@@ -22,11 +38,10 @@ var memoryGame;
     }
     //cards are created
     async function createCards(_event) {
-        let jsonFile = new URLSearchParams(window.location.search).get("json");
         let cards = await getData(jsonFile); //katrin fragen was in Klammer kommt
-        //make button invisible and create gameboard
         pairs = cards.length;
         console.log("pairs" + pairs);
+        //make button invisible and create gameboard
         let gameBoard = document.getElementById("gameBoard");
         gameBoard.innerHTML = " ";
         gameBoard.setAttribute("class", "gameGrid");
