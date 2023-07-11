@@ -30,6 +30,12 @@ h1 {
     color: black;
 }
 
+.false {
+
+    background-color: red;
+
+}
+
 #box {
     font-family: 'Roboto';
     background-color: var(--main);
@@ -67,9 +73,11 @@ button {
     padding: 10px;
 }
 
-.false {
+/* .false {
+
+    border: 2px solid;
     border-color: #d9374c;
-}
+} */
 
 .correct {
     pointer-events: none;
@@ -88,10 +96,6 @@ button {
 
 .bold {
     font-weight: bold;
-}
-
-#testSpan {
-    cursor: pointer;
 }
 
 #allWords {
@@ -127,3 +131,25 @@ button {
     cursor: pointer;
 
 }
+
+#allWords>.clicked {
+
+    opacity: 1.0;
+    scale: 1.1;
+
+}
+
+p>.clicked {
+
+    /* background-color: green; */
+    border: 2px solid green;
+    margin: -1px;
+
+}
+
+.notSelected {
+
+    opacity: 0.6;
+
+}
+

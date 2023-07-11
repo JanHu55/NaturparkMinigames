@@ -6,6 +6,12 @@ interface TextIpt {
 
 }
 
+interface Text {
+
+    text: string;
+
+}
+
 let text: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("text");
 
 // let inputArr: TextIpt[] = [];
@@ -20,6 +26,33 @@ buttDiv.append(backButton);
 
 let jsonFile: RequestInfo = new URLSearchParams(window.location.search).get("json");
 getData(jsonFile);
+// let thema: RequestInfo = new URLSearchParams(window.location.search).get("thema");
+getThema(jsonFile.toString());
+
+let description: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("description");
+
+async function getThema(thema: string): Promise<void> {
+
+    try {
+        const response: Response = await fetch("text" + thema);
+        if (!response.ok) {
+            throw new Error("Fehler beim Abrufen der Daten");
+        }
+        // let response: Response = await fetch("text" + thema);
+        let data: Text[] = await response.json();
+        description.innerHTML = data[0].text;
+        console.log(data);
+    } catch (error) {
+    }
+
+    // let response: Response = await fetch("text" + thema);
+    // if (!response.ok) {
+    //     let data: Text[] = await response.json();
+    //     description.innerHTML = data[0].text;
+    //     console.log(data);
+    // }
+
+}
 
 async function getData(_url: RequestInfo): Promise<void> {
 
@@ -42,19 +75,17 @@ async function getData(_url: RequestInfo): Promise<void> {
 function createInput(_dataInput: string, _inputCount: number): HTMLSpanElement {
 
     // get size of word and fit input field to it
-    let inputSpan: HTMLSpanElement = <HTMLSpanElement>document.createElement("span");
-    inputSpan.setAttribute("class", _dataInput.toString() + " input");
-    // inputSpan.setAttribute("class", "input");
-    // inputSpan.addEventListener("click", () => { checkInput(_dataInput); });
+    let inputSpan1: HTMLSpanElement = <HTMLSpanElement>document.createElement("span");
+    inputSpan1.setAttribute("class", _dataInput.toString() + " input");
+    // inputSpan1.setAttribute("class", "input");
+    // inputSpan1.addEventListener("click", () => { checkInput(_dataInput); });
     let output: string = "";
     for (let i = 0; i < _dataInput.length; i++) {
         output += '_';
     }
-    inputSpan.innerHTML = output;
+    inputSpan1.innerHTML = output;
 
-    // text.appendChild(inputSpan);
-
-    return inputSpan;
+    return inputSpan1;
 
 }
 
@@ -100,10 +131,36 @@ function checkInput(_dataInput: string, isInText: boolean): void {
 
     // console.log("Checking input");
     // console.log(_dataInput);
+    let inputSpan1 = <HTMLSpanElement>document.getElementsByClassName(_dataInput)[0];
+    let inputSpan2 = <HTMLSpanElement>document.getElementsByClassName(_dataInput)[1];
+
+    // remove clicked class from other span elements
+    let selectedSpans = <HTMLSpanElement>document.getElementsByClassName("clicked")[0];
+    if (selectedSpans) {
+        selectedSpans.classList.remove("clicked");
+    }
+
+    // remove false class from other span elements
+    let falseSpans = <HTMLSpanElement>document.getElementsByClassName("false")[0];
+    if (falseSpans) {
+        falseSpans.style.backgroundColor = "#e86850";
+        falseSpans.classList.remove("false");
+
+    }
+
     if (isInText) {
         string1 = _dataInput;
+        inputSpan1.classList.add("clicked");
     } else {
         string2 = _dataInput;
+
+        let allSpans = document.querySelectorAll("#allWords>p");
+        allSpans.forEach(span => {
+            span.classList.add("notSelected");
+            // console.log(span.innerHTML);
+        });
+        inputSpan2.classList.add("clicked");
+
     }
 
     console.log("string1: " + string1);
@@ -111,22 +168,38 @@ function checkInput(_dataInput: string, isInText: boolean): void {
 
     if (string1 == string2) {
         console.log("Correct");
-        let inputSpan = document.getElementsByClassName(string1)[0];
-        inputSpan.innerHTML = string1;
-        inputSpan.classList.add("bold");
-        inputSpan.classList.remove("input");
+        inputSpan1.innerHTML = string1;
+        inputSpan1.classList.add("bold");
+        inputSpan1.classList.remove("input");
+        inputSpan2.classList.remove("clicked");
+
         counter++;
-        string1 = "leer";
-        string2 = "leer";
+
+        // hide selected word
+        inputSpan2.style.display = "none";
+
+        // string1 = "leer";
+        // string2 = "leer";
+    } else if (string1 != "leer" && string2 != "leer") {
+        let inputSpan = <HTMLSpanElement>document.getElementsByClassName(string2)[1];
+        inputSpan.style.backgroundColor = "red";
+        inputSpan.classList.add("false");
     }
 
     if (counter == inputMix.length) {
-        console.log("Youre done");
+        console.log("You're done");
     }
 
     if (string1 != "leer" && string2 != "leer") {
         string1 = "leer";
         string2 = "leer";
+        inputSpan1.classList.remove("clicked");
+        inputSpan2.classList.remove("clicked");
+        let allSpans = document.querySelectorAll("#allWords>p");
+        allSpans.forEach(span => {
+            span.classList.remove("notSelected");
+            // console.log(span.innerHTML);
+        });
     }
 }
 
