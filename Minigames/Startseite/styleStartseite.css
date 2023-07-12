@@ -44,7 +44,7 @@ h1 {
 }
 
 button {
-    margin: 0.1%;
+    margin: 0.9%;
     width: 40%;
     font-size: 25px;
     border-style: none;
@@ -53,6 +53,8 @@ button {
     color: white;
     font-family: 'Roboto';
     box-shadow: 0 4px 8px #00000022;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
 }
 
 p {
