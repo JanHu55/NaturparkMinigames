@@ -17,7 +17,7 @@ namespace QuizTrueFalse {
 
     let reloadBtn: HTMLButtonElement = <HTMLButtonElement>document.getElementById("reload");
     reloadBtn.addEventListener("click", () => {
-        window.open("../Startseite/Startseite.html", "_self");
+        window.open("../Startseite/Uebersicht.html", "_self");
         console.log("reload");
     });
 

@@ -373,6 +373,6 @@ namespace audioZuordnen {
 
     function returnToStart(): void {
 
-        window.open("../Startseite/Startseite.html", "_self");
+        window.open("../Startseite/Uebersicht.html", "_self");
     }
 }

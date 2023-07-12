@@ -97,7 +97,7 @@ function selectAnswer(e) {
     startButton.innerText = 'Startseite'
     console.log("Finished Game");
     startButton.removeEventListener('click', startGame);
-    startButton.addEventListener("click", () => { window.open("../Startseite/Startseite.html", "_self"); })
+    startButton.addEventListener("click", () => { window.open("../Startseite/Uebersicht.html", "_self"); })
     startButton.classList.remove('hide')
   }
 }

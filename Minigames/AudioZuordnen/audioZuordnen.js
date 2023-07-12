@@ -261,7 +261,7 @@ var audioZuordnen;
         }
     }
     function returnToStart() {
-        window.open("../Startseite/Startseite.html", "_self");
+        window.open("../Startseite/Uebersicht.html", "_self");
     }
 })(audioZuordnen || (audioZuordnen = {}));
 //# sourceMappingURL=audioZuordnen.js.map

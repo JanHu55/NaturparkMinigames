@@ -154,6 +154,6 @@ function checkInput(_dataInput, isInText) {
 }
 // reload the page (to restart the game)
 function returnToStart() {
-    window.open("../Startseite/Startseite.html", "_self");
+    window.open("../Startseite/Uebersicht.html", "_self");
 }
 //# sourceMappingURL=lueckentext.js.map
