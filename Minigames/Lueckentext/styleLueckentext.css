@@ -30,6 +30,12 @@ h1 {
     color: black;
 }
 
+.false {
+
+    background-color: red;
+
+}
+
 #box {
     font-family: 'Roboto';
     background-color: var(--main);
@@ -67,9 +73,11 @@ button {
     padding: 10px;
 }
 
-.false {
+/* .false {
+
+    border: 2px solid;
     border-color: #d9374c;
-}
+} */
 
 .correct {
     pointer-events: none;
@@ -90,15 +98,12 @@ button {
     font-weight: bold;
 }
 
-#testSpan {
-    cursor: pointer;
-}
-
 #allWords {
 
     border: 4px solid var(--border);
     padding: 12px;
     margin-bottom: 15px;
+    margin-top: -20px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -107,10 +112,14 @@ button {
 #allWords>p {
 
     margin: 5px;
-    padding-left: 6px;
+    padding: 4px 6px 4px 6px;
+    /* padding-left: 6px;
     padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px; */
     /* width: 20%; */
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 26px;
     border-style: none;
     /* border-radius: 10px; */
     background-color: var(--button);
@@ -127,3 +136,25 @@ button {
     cursor: pointer;
 
 }
+
+#allWords>.clicked {
+
+    opacity: 1.0;
+    scale: 1.1;
+
+}
+
+p>.clicked {
+
+    /* background-color: green; */
+    border: 2px solid green;
+    margin: -1px;
+
+}
+
+.notSelected {
+
+    opacity: 0.6;
+
+}
+

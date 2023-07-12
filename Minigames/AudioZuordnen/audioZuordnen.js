@@ -41,6 +41,22 @@ var audioZuordnen;
     let jsonAudio = new URLSearchParams(window.location.search).get("jsonAudio");
     let jsonBilder = new URLSearchParams(window.location.search).get("jsonBilder");
     getJson(jsonAudio, jsonBilder);
+    getThema(jsonAudio.toString());
+    let description = document.getElementById("description");
+    async function getThema(thema) {
+        try {
+            const response = await fetch("text" + thema);
+            if (!response.ok) {
+                throw new Error("Fehler beim Abrufen der Daten");
+            }
+            // let response: Response = await fetch("text" + thema);
+            let data = await response.json();
+            description.innerHTML = data[0].text;
+            console.log(data);
+        }
+        catch (error) {
+        }
+    }
     // implement the cards and audio data in the table 
     function fillCards(_cardsArray1, _cardsArray2) {
         for (let i = 0; i < _cardsArray1.length; i++) {

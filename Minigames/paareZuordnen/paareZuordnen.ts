@@ -63,6 +63,25 @@ namespace paareZuordnen {
     let jsonFile: RequestInfo = new URLSearchParams(window.location.search).get("json");
     getJson(jsonFile);
 
+    getThema(jsonFile.toString());
+
+    let description: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("description");
+
+    async function getThema(thema: string): Promise<void> {
+
+        try {
+            const response: Response = await fetch("text" + thema);
+            if (!response.ok) {
+                throw new Error("Fehler beim Abrufen der Daten");
+            }
+            let data: Text[] = await response.json();
+            description.innerHTML = data[0].text;
+            console.log(data);
+        } catch (error) {
+        }
+
+    }
+
     // implement the cards and audio data in the table 
     function fillCards(_cardsArray1: Cards[], _cardsArray2: Cards[]): void {
         // console.log("Hello World!")

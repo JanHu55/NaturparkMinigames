@@ -65,11 +65,31 @@ namespace audioZuordnen {
 
     }
 
-    
+
     // get data from .json files (later from databank)
     let jsonAudio: RequestInfo = new URLSearchParams(window.location.search).get("jsonAudio");
     let jsonBilder: RequestInfo = new URLSearchParams(window.location.search).get("jsonBilder");
     getJson(jsonAudio, jsonBilder);
+
+    getThema(jsonAudio.toString());
+
+    let description: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("description");
+
+    async function getThema(thema: string): Promise<void> {
+
+        try {
+            const response: Response = await fetch("text" + thema);
+            if (!response.ok) {
+                throw new Error("Fehler beim Abrufen der Daten");
+            }
+            // let response: Response = await fetch("text" + thema);
+            let data: Text[] = await response.json();
+            description.innerHTML = data[0].text;
+            console.log(data);
+        } catch (error) {
+        }
+
+    }
 
     // implement the cards and audio data in the table 
     function fillCards(_cardsArray1: Audio[], _cardsArray2: Cards[]): void {

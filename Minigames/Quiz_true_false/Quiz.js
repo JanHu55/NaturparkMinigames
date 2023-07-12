@@ -33,14 +33,30 @@ var QuizTrueFalse;
     //     let json: Item[] = await response.json();
     //     generateContent(json);
     // }
+    let jsonFile = new URLSearchParams(window.location.search).get("json");
     window.addEventListener("load", () => {
-        console.log("Page loading!");
-        let jsonFile = new URLSearchParams(window.location.search).get("json");
+        // console.log("Page loading!");
+        getThema(jsonFile.toString());
         handleLoad(jsonFile);
     });
     // Oder so: (Dann wird das data.json file direkt eingelesen wenn die Seite lädt)
     // handleLoad("data.json");
     let data;
+    let description = document.getElementById("description");
+    async function getThema(thema) {
+        try {
+            const response = await fetch("text" + thema);
+            if (!response.ok) {
+                throw new Error("Fehler beim Abrufen der Daten");
+            }
+            // let response: Response = await fetch("text" + thema);
+            let data = await response.json();
+            description.innerHTML = data[0].text;
+            console.log(data);
+        }
+        catch (error) {
+        }
+    }
     async function handleLoad(_url) {
         console.log(_url);
         let response = await fetch(_url);

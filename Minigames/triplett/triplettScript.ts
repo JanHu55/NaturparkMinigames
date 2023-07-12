@@ -1,6 +1,6 @@
 namespace triplettGame {
 
-    window.addEventListener("load", handleLoad);
+    // window.addEventListener("load", handleLoad);
 
     interface Card {
         src: string;
@@ -13,16 +13,32 @@ namespace triplettGame {
     let wonPairs: number = 0;
     let clickBoolean: boolean = true;
 
-    let startButton: HTMLButtonElement;
+    let startButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("startButton");
+    startButton.addEventListener("click", createCards);
 
     //array for comparing cards
     let cardArray: HTMLDivElement[] = [];
     //array for comparing Cards
     let compareArray: HTMLDivElement[] = [];
 
-    function handleLoad(_event: Event): void {
-        startButton = <HTMLButtonElement>document.getElementById("startButton");
-        startButton.addEventListener("click", createCards);
+    let jsonFile: RequestInfo = new URLSearchParams(window.location.search).get("json");
+    getThema(jsonFile.toString());
+
+    let description: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("description");
+
+    async function getThema(thema: string): Promise<void> {
+
+        try {
+            const response: Response = await fetch("text" + thema);
+            if (!response.ok) {
+                throw new Error("Fehler beim Abrufen der Daten");
+            }
+            let data: Text[] = await response.json();
+            description.innerHTML = data[0].text;
+            console.log(data);
+        } catch (error) {
+            // console.log("Fehler beim Abrufen der Daten");
+        }
     }
 
     async function getData(_url: RequestInfo): Promise<Card[]> {
@@ -34,7 +50,6 @@ namespace triplettGame {
     //cards are created
     async function createCards(_event: MouseEvent): Promise<void> {
 
-        let jsonFile: RequestInfo = new URLSearchParams(window.location.search).get("json");
         let cards: Card[] = await getData(jsonFile); //katrin fragen was in Klammer kommt
         //make button invisible and create gameboard
 

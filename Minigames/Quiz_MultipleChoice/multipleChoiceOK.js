@@ -16,15 +16,32 @@ nextButton.addEventListener('click', () => {
 })
 
 
+let jsonFile = new URLSearchParams(window.location.search).get("json");
 
 async function handleLoad() {
-  let jsonFile = new URLSearchParams(window.location.search).get("json");
-  console.log(jsonFile);
+  // console.log(jsonFile);
   let response = await fetch(jsonFile);
   let json = await response.json();
   data = json;
 
   startGame(data);
+}
+
+
+let description = document.getElementById("description");
+getThema(jsonFile.toString());
+
+async function getThema(thema) {
+
+  try {
+    const response = await fetch("text" + thema);
+    if (!response.ok) {
+      throw new Error("Fehler beim Abrufen der Daten");
+    }
+    let data = await response.json();
+    description.innerHTML = data[0].text;
+  } catch (error) {
+  }
 }
 
 function startGame(_data) {
