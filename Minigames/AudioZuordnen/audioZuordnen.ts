@@ -24,6 +24,8 @@ namespace audioZuordnen {
     backButton.addEventListener("click", returnToStart);
     buttDiv.append(backButton);
 
+    let audioArr: HTMLAudioElement[] = [];
+
     // id for the HTML Table Cards to put the images in
     let idCount: number = 1;
 
@@ -98,58 +100,86 @@ namespace audioZuordnen {
 
             // let audioSlots: HTMLElement = <HTMLElement>document.getElementById(_cardsArray1[i].pairID.toString());
             let audioSlots: HTMLElement = <HTMLElement>document.getElementById(idCount.toString());
-
-            // console.log("i = " + i);
-            // console.log("ID audio Button: " + _cardsArray1[i].pairID);
-            // console.log("ID image: " + _cardsArray2[i].pairID);
+            let div: HTMLDivElement = <HTMLDivElement>document.createElement("div");
 
             // Audio Cards
-            let audio: HTMLSourceElement = <HTMLSourceElement>document.createElement("source");
-            let audioControls: HTMLElement = <HTMLElement>document.createElement("audio");
-
-            // Attributes of Audio Cards
-            audioControls.setAttribute("controls", "controls");
+            let audio: HTMLAudioElement = <HTMLAudioElement>document.createElement("audio");
 
             audio.setAttribute("src", _cardsArray1[i].src);
             // audio.setAttribute("name", _cardsArray1[i].pairID.toString());
             audio.setAttribute("type", _cardsArray1[i].type);
+            audioArr.push(audio);
 
-            audioControls.appendChild(audio)
-            audioSlots.appendChild(audioControls);
+            div.appendChild(audio);
+            // audioSlots.appendChild(div);
 
             // button for audio selection
             let buttAudio: HTMLButtonElement = <HTMLButtonElement>document.createElement("button");
-            // let buttAudio: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butt" + _cardsArray1[i].pairID.toString());
-            // console.log("butt" + _cardsArray1[i].pairID.toString());
+            buttAudio.addEventListener("click", (e) => playAudio(audio, e));
 
-            buttAudio.innerText = "Auswählen";
-            buttAudio.setAttribute("name", _cardsArray1[i].pairID.toString());
             buttAudio.classList.add("buttAudio");
+            div.appendChild(buttAudio)
 
-            buttAudio.addEventListener("click", compareSelection);
 
-            audioSlots.appendChild(buttAudio);
+            let button = document.createElement("button");
+
+            button.innerText = "Auswählen";
+            button.setAttribute("name", _cardsArray1[i].pairID.toString());
+            button.setAttribute("class", "selAudio");
+
+            button.addEventListener("click", compareSelection);
+
+
+            div.appendChild(button);
+            audioSlots.appendChild(div);
+
 
             //Image Cards
             let imgSlots: HTMLElement = <HTMLElement>document.getElementById("1." + idCount.toString());
             let img: HTMLImageElement = <HTMLImageElement>document.createElement("img");
+            let divImg: HTMLDivElement = <HTMLDivElement>document.createElement("div");
 
             img.setAttribute("src", _cardsArray2[i].src);
-            img.setAttribute("width", "90px");
+            img.setAttribute("width", "105px");
 
             img.setAttribute("name", _cardsArray2[i].pairID.toString());
             img.classList.add("selImage");
 
             img.addEventListener("click", compareSelection);
+            divImg.appendChild(img);
 
-            imgSlots.appendChild(img);
             let imgName: HTMLParagraphElement = <HTMLParagraphElement>document.createElement("p");
             imgName.innerHTML = _cardsArray2[i].name;
             imgName.classList.add("subText");
-            imgSlots.appendChild(imgName);
+
+            
+            divImg.appendChild(imgName);
+            divImg.innerHTML += i + 1 + ".";
+            imgSlots.appendChild(divImg);
             idCount++;
         }
 
+    }
+
+    function playAudio(_audio: HTMLAudioElement, _event: Event): void {
+
+        let btn: HTMLButtonElement = <HTMLButtonElement>_event.target;
+        if (btn.classList.contains("playing")) {
+            btn.classList.remove("playing");
+            _audio.pause();
+        } else {
+            let playing = document.getElementsByClassName("playing")[0];
+            if (playing != null) {
+                playing.classList.remove("playing");
+                audioArr.forEach(audio => {
+                    audio.pause();
+                    audio.currentTime = 0;
+                });
+            }
+            _audio.currentTime = 0;
+            _audio.play();
+            btn.classList.add("playing");
+        }
     }
 
     let imageSelected: boolean;
@@ -161,17 +191,18 @@ namespace audioZuordnen {
 
         // vorrübergehende Lösung
         if (pickedArr.length == 0) {
-
             removeSelection();
-
+            removeFalseClass();
         }
 
         let picked: HTMLElement = <HTMLElement>_event.target;
+        let pickedTD: HTMLElement = picked.parentElement;
 
         if (picked.classList.contains("done") == false) {
 
+            pickedTD.classList.add("pickedParent");
             //select button if a button is clicked
-            if (picked.classList.contains("buttAudio") == true && imageSelected != false) {
+            if (picked.classList.contains("selAudio") == true && imageSelected != false) {
 
                 imageSelected = false;
                 pickedButt = <HTMLButtonElement>_event.target;
@@ -180,11 +211,12 @@ namespace audioZuordnen {
 
                 console.log("pickedID: " + pickedButt.name + " (button)");
 
-            } else if (picked.classList.contains("buttAudio") == true && imageSelected == false) {
+            } else if (picked.classList.contains("selAudio") == true && imageSelected == false) {
 
                 pickedArr.pop();
                 pickedButt = <HTMLButtonElement>_event.target;
                 removeSelection();
+
                 pickedButt.classList.add("picked");
                 pickedArr.push(pickedButt.name);
 
@@ -207,12 +239,14 @@ namespace audioZuordnen {
                 pickedArr.pop();
                 pickedImg = <HTMLImageElement>_event.target;
                 removeSelection();
+
                 pickedImg.classList.add("picked");
                 pickedArr.push(pickedImg.name);
 
                 console.log("pickedID: " + pickedImg.name + " (image)");
 
             }
+
 
             console.log("pickedArr: " + pickedArr);
 
@@ -231,19 +265,19 @@ namespace audioZuordnen {
 
                     for (let i: number = 0; i < pickedClass.length; i++) {
 
-                        pickedClass[0].classList.add("done");
+                        let parentDiv: HTMLDivElement = <HTMLDivElement>pickedClass[0].parentElement;
+                        parentDiv.classList.add("done");
                         pickedClass[0].classList.remove("picked");
                         if (pickedImgClass.length != 0) {
                             // !!!!!!!!!!!!!!!!!  We have a problem here !!!!!!!!!!!!!!!!!!!!!!!!
                             // yo, I don't understand it but this seems to work
-                            pickedImgClass[0].classList.add("done");
+                            let parentTdImg: HTMLElement = <HTMLElement>pickedClass[0].parentElement;
+                            parentTdImg.classList.add("done");
                             pickedImgClass[0].classList.remove("picked");
                             // console.log("correct but wrong");
 
                         }
-
                         console.log("correct pair marked");
-
                     }
 
                     // check if all pairs were found
@@ -263,7 +297,8 @@ namespace audioZuordnen {
                     console.log("Incorrect!");
                     feedbackMsg.innerText = "Leider falsch!";
 
-                    setTimeout(removeSelection, 200);
+                    addFalseClass();
+                    // removeSelection();
                 }
                 pickedArr = [];
                 imageSelected = undefined;
@@ -275,17 +310,65 @@ namespace audioZuordnen {
 
     function removeSelection(): void {
 
-        let pickedClass: HTMLCollectionOf<HTMLElement> = <HTMLCollectionOf<HTMLElement>>document.getElementsByClassName("picked");
+        let pickedClass: HTMLCollectionOf<HTMLDivElement> = <HTMLCollectionOf<HTMLDivElement>>document.getElementsByClassName("picked");
         let pickedImgClass: HTMLCollectionOf<HTMLImageElement> = <HTMLCollectionOf<HTMLImageElement>>document.getElementsByClassName("picked");
 
         for (let i: number = 0; i < pickedClass.length; i++) {
 
+            let pickedParent: HTMLElement = pickedClass[0].parentElement;
+            pickedParent.classList.remove("pickedParent");
             pickedClass[0].classList.remove("picked");
+
             if (pickedImgClass.length != 0) {
+                let pickedImgParent: HTMLDivElement = <HTMLDivElement>pickedImgClass[0].parentElement;
+                pickedImgParent.classList.remove("pickedParent");
                 pickedImgClass[0].classList.remove("picked");
             }
+
             console.log("Selections removed!");
         }
+    }
+
+    function addFalseClass(): void {
+
+        let pickedClass: HTMLCollectionOf<HTMLDivElement> = <HTMLCollectionOf<HTMLDivElement>>document.getElementsByClassName("picked");
+        let pickedImgClass: HTMLCollectionOf<HTMLImageElement> = <HTMLCollectionOf<HTMLImageElement>>document.getElementsByClassName("picked");
+
+        for (let i: number = 0; i < pickedClass.length; i++) {
+
+            let pickedParent: HTMLElement = pickedClass[0].parentElement;
+            pickedParent.classList.add("falseParent");
+            pickedParent.classList.remove("pickedParent");
+            pickedClass[0].classList.remove("picked");
+
+            if (pickedImgClass.length != 0) {
+                let pickedImgParent: HTMLDivElement = <HTMLDivElement>pickedImgClass[0].parentElement;
+                pickedImgParent.classList.add("falseParent");
+                pickedImgParent.classList.remove("pickedParent");
+                pickedImgClass[0].classList.remove("picked");
+            }
+
+            console.log("Selections removed!");
+        }
+
+    }
+
+    function removeFalseClass(): void {
+
+        let falseParents: HTMLCollectionOf<HTMLElement> = <HTMLCollectionOf<HTMLElement>>document.getElementsByClassName("falseParent");
+        let falseImg = document.querySelectorAll(".falseParent>img");
+        console.log(falseImg.length);
+        for (let i: number = 0; i < falseParents.length; i++) {
+
+            falseParents[0].classList.remove("falseParent");
+            if (falseImg.length != 0) {
+                let falseImgParent = <HTMLDivElement>falseImg[0].parentElement;
+                falseImgParent.classList.remove("falseParent");
+                console.log("False removed!!!!!!!!!!!!!!!!!!!!!!!");
+            }
+
+        }
+
     }
 
     function returnToStart(): void {

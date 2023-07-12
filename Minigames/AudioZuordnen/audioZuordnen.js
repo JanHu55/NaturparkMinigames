@@ -10,6 +10,7 @@ var audioZuordnen;
     // Back to the main game/ reload page
     backButton.addEventListener("click", returnToStart);
     buttDiv.append(backButton);
+    let audioArr = [];
     // id for the HTML Table Cards to put the images in
     let idCount = 1;
     async function getJson(_url1, _url2) {
@@ -62,42 +63,64 @@ var audioZuordnen;
         for (let i = 0; i < _cardsArray1.length; i++) {
             // let audioSlots: HTMLElement = <HTMLElement>document.getElementById(_cardsArray1[i].pairID.toString());
             let audioSlots = document.getElementById(idCount.toString());
-            // console.log("i = " + i);
-            // console.log("ID audio Button: " + _cardsArray1[i].pairID);
-            // console.log("ID image: " + _cardsArray2[i].pairID);
+            let div = document.createElement("div");
             // Audio Cards
-            let audio = document.createElement("source");
-            let audioControls = document.createElement("audio");
-            // Attributes of Audio Cards
-            audioControls.setAttribute("controls", "controls");
+            let audio = document.createElement("audio");
             audio.setAttribute("src", _cardsArray1[i].src);
             // audio.setAttribute("name", _cardsArray1[i].pairID.toString());
             audio.setAttribute("type", _cardsArray1[i].type);
-            audioControls.appendChild(audio);
-            audioSlots.appendChild(audioControls);
+            audioArr.push(audio);
+            div.appendChild(audio);
+            // audioSlots.appendChild(div);
             // button for audio selection
             let buttAudio = document.createElement("button");
-            // let buttAudio: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butt" + _cardsArray1[i].pairID.toString());
-            // console.log("butt" + _cardsArray1[i].pairID.toString());
-            buttAudio.innerText = "Auswählen";
-            buttAudio.setAttribute("name", _cardsArray1[i].pairID.toString());
+            buttAudio.addEventListener("click", (e) => playAudio(audio, e));
             buttAudio.classList.add("buttAudio");
-            buttAudio.addEventListener("click", compareSelection);
-            audioSlots.appendChild(buttAudio);
+            div.appendChild(buttAudio);
+            let button = document.createElement("button");
+            button.innerText = "Auswählen";
+            button.setAttribute("name", _cardsArray1[i].pairID.toString());
+            button.setAttribute("class", "selAudio");
+            button.addEventListener("click", compareSelection);
+            div.appendChild(button);
+            audioSlots.appendChild(div);
             //Image Cards
             let imgSlots = document.getElementById("1." + idCount.toString());
             let img = document.createElement("img");
+            let divImg = document.createElement("div");
             img.setAttribute("src", _cardsArray2[i].src);
-            img.setAttribute("width", "90px");
+            img.setAttribute("width", "105px");
             img.setAttribute("name", _cardsArray2[i].pairID.toString());
             img.classList.add("selImage");
             img.addEventListener("click", compareSelection);
-            imgSlots.appendChild(img);
+            divImg.appendChild(img);
             let imgName = document.createElement("p");
             imgName.innerHTML = _cardsArray2[i].name;
             imgName.classList.add("subText");
-            imgSlots.appendChild(imgName);
+            divImg.appendChild(imgName);
+            divImg.innerHTML += i + 1 + ".";
+            imgSlots.appendChild(divImg);
             idCount++;
+        }
+    }
+    function playAudio(_audio, _event) {
+        let btn = _event.target;
+        if (btn.classList.contains("playing")) {
+            btn.classList.remove("playing");
+            _audio.pause();
+        }
+        else {
+            let playing = document.getElementsByClassName("playing")[0];
+            if (playing != null) {
+                playing.classList.remove("playing");
+                audioArr.forEach(audio => {
+                    audio.pause();
+                    audio.currentTime = 0;
+                });
+            }
+            _audio.currentTime = 0;
+            _audio.play();
+            btn.classList.add("playing");
         }
     }
     let imageSelected;
@@ -108,18 +131,21 @@ var audioZuordnen;
         // vorrübergehende Lösung
         if (pickedArr.length == 0) {
             removeSelection();
+            removeFalseClass();
         }
         let picked = _event.target;
+        let pickedTD = picked.parentElement;
         if (picked.classList.contains("done") == false) {
+            pickedTD.classList.add("pickedParent");
             //select button if a button is clicked
-            if (picked.classList.contains("buttAudio") == true && imageSelected != false) {
+            if (picked.classList.contains("selAudio") == true && imageSelected != false) {
                 imageSelected = false;
                 pickedButt = _event.target;
                 pickedButt.classList.add("picked");
                 pickedArr.push(pickedButt.name);
                 console.log("pickedID: " + pickedButt.name + " (button)");
             }
-            else if (picked.classList.contains("buttAudio") == true && imageSelected == false) {
+            else if (picked.classList.contains("selAudio") == true && imageSelected == false) {
                 pickedArr.pop();
                 pickedButt = _event.target;
                 removeSelection();
@@ -152,12 +178,14 @@ var audioZuordnen;
                     let pickedClass = document.getElementsByClassName("picked");
                     let pickedImgClass = document.getElementsByClassName("picked");
                     for (let i = 0; i < pickedClass.length; i++) {
-                        pickedClass[0].classList.add("done");
+                        let parentDiv = pickedClass[0].parentElement;
+                        parentDiv.classList.add("done");
                         pickedClass[0].classList.remove("picked");
                         if (pickedImgClass.length != 0) {
                             // !!!!!!!!!!!!!!!!!  We have a problem here !!!!!!!!!!!!!!!!!!!!!!!!
                             // yo, I don't understand it but this seems to work
-                            pickedImgClass[0].classList.add("done");
+                            let parentTdImg = pickedClass[0].parentElement;
+                            parentTdImg.classList.add("done");
                             pickedImgClass[0].classList.remove("picked");
                             // console.log("correct but wrong");
                         }
@@ -176,7 +204,8 @@ var audioZuordnen;
                 else {
                     console.log("Incorrect!");
                     feedbackMsg.innerText = "Leider falsch!";
-                    setTimeout(removeSelection, 200);
+                    addFalseClass();
+                    // removeSelection();
                 }
                 pickedArr = [];
                 imageSelected = undefined;
@@ -190,11 +219,45 @@ var audioZuordnen;
         let pickedClass = document.getElementsByClassName("picked");
         let pickedImgClass = document.getElementsByClassName("picked");
         for (let i = 0; i < pickedClass.length; i++) {
+            let pickedParent = pickedClass[0].parentElement;
+            pickedParent.classList.remove("pickedParent");
             pickedClass[0].classList.remove("picked");
             if (pickedImgClass.length != 0) {
+                let pickedImgParent = pickedImgClass[0].parentElement;
+                pickedImgParent.classList.remove("pickedParent");
                 pickedImgClass[0].classList.remove("picked");
             }
             console.log("Selections removed!");
+        }
+    }
+    function addFalseClass() {
+        let pickedClass = document.getElementsByClassName("picked");
+        let pickedImgClass = document.getElementsByClassName("picked");
+        for (let i = 0; i < pickedClass.length; i++) {
+            let pickedParent = pickedClass[0].parentElement;
+            pickedParent.classList.add("falseParent");
+            pickedParent.classList.remove("pickedParent");
+            pickedClass[0].classList.remove("picked");
+            if (pickedImgClass.length != 0) {
+                let pickedImgParent = pickedImgClass[0].parentElement;
+                pickedImgParent.classList.add("falseParent");
+                pickedImgParent.classList.remove("pickedParent");
+                pickedImgClass[0].classList.remove("picked");
+            }
+            console.log("Selections removed!");
+        }
+    }
+    function removeFalseClass() {
+        let falseParents = document.getElementsByClassName("falseParent");
+        let falseImg = document.querySelectorAll(".falseParent>img");
+        console.log(falseImg.length);
+        for (let i = 0; i < falseParents.length; i++) {
+            falseParents[0].classList.remove("falseParent");
+            if (falseImg.length != 0) {
+                let falseImgParent = falseImg[0].parentElement;
+                falseImgParent.classList.remove("falseParent");
+                console.log("False removed!!!!!!!!!!!!!!!!!!!!!!!");
+            }
         }
     }
     function returnToStart() {
