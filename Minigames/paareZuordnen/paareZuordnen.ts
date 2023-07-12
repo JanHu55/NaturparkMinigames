@@ -117,6 +117,13 @@ namespace paareZuordnen {
     // compare the picked Cards
     function compareCards(_event: Event): void {
 
+        let falseClass: HTMLCollectionOf<HTMLImageElement> = <HTMLCollectionOf<HTMLImageElement>>document.getElementsByClassName("false");
+
+        if (falseClass[0] != undefined) {
+            for (let i: number = 0; i <= falseClass.length; i++) {
+                falseClass[0].classList.remove("false");
+            }
+        }
 
         // get picked Image
         let picked: HTMLImageElement = <HTMLImageElement>_event.target;
@@ -146,22 +153,23 @@ namespace paareZuordnen {
 
                     correctPairs++;
 
-                    let pickedClass: HTMLCollectionOf<HTMLImageElement> = <HTMLCollectionOf<HTMLImageElement>>document.getElementsByClassName("picked");
+                    let falseClass: HTMLCollectionOf<HTMLImageElement> = <HTMLCollectionOf<HTMLImageElement>>document.getElementsByClassName("picked");
 
                     // adjust correct selected pairs, so they can't be selected again
-                    for (let i: number = 0; i <= pickedClass.length; i++) {
+                    for (let i: number = 0; i <= falseClass.length; i++) {
 
-                        pickedClass[0].classList.add("done");
-                        pickedClass[0].classList.remove("picked");
+                        falseClass[0].classList.add("done");
+                        falseClass[0].classList.remove("picked");
                         console.log("Correct pair marked!");
 
                     }
 
                     // check if all pairs were found
                     if (correctPairs == 6) {
-
+                        backButton.style.marginTop = "-100px";
                         console.log("You won!");
                         feedbackMsg.innerText = "Du hast gewonnen!";
+
 
                     } else {
 
@@ -169,6 +177,7 @@ namespace paareZuordnen {
                     }
 
                 } else {
+
 
                     console.log("Incorrect!");
                     feedbackMsg.innerText = "Leider falsch!";
@@ -188,12 +197,13 @@ namespace paareZuordnen {
     // puts the Cards back to the default look from before selection
     function removeSelection(_event: Event): void {
 
-        let pickedClass: HTMLCollectionOf<HTMLImageElement> = <HTMLCollectionOf<HTMLImageElement>>document.getElementsByClassName("picked");
+        let falseClass: HTMLCollectionOf<HTMLImageElement> = <HTMLCollectionOf<HTMLImageElement>>document.getElementsByClassName("picked");
 
-        for (let i: number = 0; i <= pickedClass.length; i++) {
+        for (let i: number = 0; i <= falseClass.length; i++) {
 
-            // console.log("pickedClass[0]: " + pickedClass[0].classList)
-            pickedClass[0].classList.remove("picked");
+            falseClass[0].classList.add("false");
+            // console.log("falseClass[0]: " + falseClass[0].classList)
+            falseClass[0].classList.remove("picked");
             console.log("Class removed!");
         }
 

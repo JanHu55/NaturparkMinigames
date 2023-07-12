@@ -83,6 +83,12 @@ var paareZuordnen;
     }
     // compare the picked Cards
     function compareCards(_event) {
+        let falseClass = document.getElementsByClassName("false");
+        if (falseClass[0] != undefined) {
+            for (let i = 0; i <= falseClass.length; i++) {
+                falseClass[0].classList.remove("false");
+            }
+        }
         // get picked Image
         let picked = _event.target;
         if (picked.classList.contains("picked") == false && picked.classList.contains("done") == false) {
@@ -104,15 +110,16 @@ var paareZuordnen;
                     pickedCard1 = "leer";
                     pickedCard2 = "leer";
                     correctPairs++;
-                    let pickedClass = document.getElementsByClassName("picked");
+                    let falseClass = document.getElementsByClassName("picked");
                     // adjust correct selected pairs, so they can't be selected again
-                    for (let i = 0; i <= pickedClass.length; i++) {
-                        pickedClass[0].classList.add("done");
-                        pickedClass[0].classList.remove("picked");
+                    for (let i = 0; i <= falseClass.length; i++) {
+                        falseClass[0].classList.add("done");
+                        falseClass[0].classList.remove("picked");
                         console.log("Correct pair marked!");
                     }
                     // check if all pairs were found
                     if (correctPairs == 6) {
+                        backButton.style.marginTop = "-100px";
                         console.log("You won!");
                         feedbackMsg.innerText = "Du hast gewonnen!";
                     }
@@ -135,10 +142,11 @@ var paareZuordnen;
     }
     // puts the Cards back to the default look from before selection
     function removeSelection(_event) {
-        let pickedClass = document.getElementsByClassName("picked");
-        for (let i = 0; i <= pickedClass.length; i++) {
-            // console.log("pickedClass[0]: " + pickedClass[0].classList)
-            pickedClass[0].classList.remove("picked");
+        let falseClass = document.getElementsByClassName("picked");
+        for (let i = 0; i <= falseClass.length; i++) {
+            falseClass[0].classList.add("false");
+            // console.log("falseClass[0]: " + falseClass[0].classList)
+            falseClass[0].classList.remove("picked");
             console.log("Class removed!");
         }
         // remove saved selections
