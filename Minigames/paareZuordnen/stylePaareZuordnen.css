@@ -85,14 +85,16 @@ td {
 
 .done {
 
-    opacity: 0.5;
+    opacity: 0.0;
 
 }
 
 img {
     /* border-radius: 12px; */
     box-shadow:0 4px 8px #00000053;
-
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
 }
 
 button {
@@ -110,4 +112,13 @@ button {
     box-shadow:0 4px 8px #00000022;
     /* position: relative; */
     justify-content: center;
+}
+
+.false {
+
+    border: 3px solid red;
+     /* Adds the inner "border" */
+    box-shadow: 0 0 1px #fff inset;
+    margin: -3px;
+
 }

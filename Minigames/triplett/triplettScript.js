@@ -137,10 +137,10 @@ var triplettGame;
                 // document.getElementById("gameBoard").innerHTML = "Juhu, geschafft!";
                 //create reload button
                 let neustart = document.createElement("button");
-                neustart.innerHTML = "Neustart";
+                neustart.innerHTML = "Startseite";
                 document.getElementById("gameBoard").appendChild(neustart);
                 neustart.addEventListener("click", function () {
-                    window.location.reload();
+                    window.open("../Startseite/Uebersicht.html", "_self");
                 });
             }
         }

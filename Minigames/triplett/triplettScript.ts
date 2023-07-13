@@ -165,10 +165,10 @@ namespace triplettGame {
                 // document.getElementById("gameBoard").innerHTML = "Juhu, geschafft!";
                 //create reload button
                 let neustart: HTMLButtonElement = document.createElement("button");
-                neustart.innerHTML = "Neustart";
+                neustart.innerHTML = "Startseite";
                 document.getElementById("gameBoard").appendChild(neustart);
                 neustart.addEventListener("click", function (): void {
-                    window.location.reload();
+                    window.open("../Startseite/Uebersicht.html", "_self");
                 });
 
             }
