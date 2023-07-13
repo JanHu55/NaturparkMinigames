@@ -3,6 +3,7 @@ namespace handwerk {
 let lueckentext1: HTMLButtonElement = <HTMLButtonElement>document.getElementById("lueckentext1");
 let lueckentext2: HTMLButtonElement = <HTMLButtonElement>document.getElementById("lueckentext2");
 let lueckentext3: HTMLButtonElement = <HTMLButtonElement>document.getElementById("lueckentext3");
+let lueckentext4: HTMLButtonElement = <HTMLButtonElement>document.getElementById("lueckentext4");
 // let memory: HTMLButtonElement = <HTMLButtonElement>document.getElementById("memory");
 // let triplett: HTMLButtonElement = <HTMLButtonElement>document.getElementById("triplett");
 // let zuordnungAudio: HTMLButtonElement = <HTMLButtonElement>document.getElementById("zuordnungAudio");
@@ -15,6 +16,7 @@ let multipleChoiceOK: HTMLButtonElement = <HTMLButtonElement>document.getElement
 lueckentext1.addEventListener("click", () => { window.open("../../Lueckentext/lueckentext.html?json=Familie Zahoransky_Bürstenbinder_Lueckentext.json", "_self") });
 lueckentext2.addEventListener("click", () => { window.open("../../Lueckentext/lueckentext.html?json=Glasblaeser_Lueckentext.json", "_self") });
 lueckentext3.addEventListener("click", () => { window.open("../../Lueckentext/lueckentext.html?json=Strohflechter_Lueckentext.json", "_self") });
+lueckentext4.addEventListener("click", () => { window.open("../../Lueckentext/lueckentext.html?json=Forstwirt_Lueckentext.json", "_self") });
 // memory.addEventListener("click", () => { window.open("../../Memory/memory.html?json=MemoryWintersport.json", "_self") });
 // triplett.addEventListener("click", () => { window.open("../../triplett/triplett.html?json=bauernhofTierTriplett.json", "_self") });
 // zuordnungAudio.addEventListener("click", () => { window.open("../../AudioZuordnen/audioZuordnen.html?jsonAudio=BauernhoftiereAudio.json&jsonBilder=BauernhoftiereBilder.json", "_self") });

@@ -7,6 +7,7 @@ let lueckentext2: HTMLButtonElement = <HTMLButtonElement>document.getElementById
 // let zuordnungAudio: HTMLButtonElement = <HTMLButtonElement>document.getElementById("zuordnungAudio");
 // let zuordnung: HTMLButtonElement = <HTMLButtonElement>document.getElementById("zuordnung");
 let quizRF: HTMLButtonElement = <HTMLButtonElement>document.getElementById("quizRF");
+let quizRF2: HTMLButtonElement = <HTMLButtonElement>document.getElementById("quizRF2");
 // let multipleChoiceOK: HTMLButtonElement = <HTMLButtonElement>document.getElementById("multipleChoiceOK");
 let dragNDrop: HTMLButtonElement = <HTMLButtonElement>document.getElementById("dragNDrop");
 
@@ -18,6 +19,7 @@ lueckentext2.addEventListener("click", () => { window.open("../../Lueckentext/lu
 // zuordnungAudio.addEventListener("click", () => { window.open("../../AudioZuordnen/audioZuordnen.html?jsonAudio=BauernhoftiereAudio.json&jsonBilder=BauernhoftiereBilder.json", "_self") });
 // zuordnung.addEventListener("click", () => { window.open("../../paareZuordnen/paareZuordnen.html?json=dataPaare.json", "_self") });
 quizRF.addEventListener("click", () => { window.open("../../Quiz_true_false/Quiz.html?json=Quiz_True_False_Wasserverbrauch.json", "_self") });
+quizRF2.addEventListener("click", () => { window.open("../../Quiz_true_false/Quiz.html?json=Quiz_True_False_VerhaltenAmFeldsee.json", "_self") });
 // multipleChoiceOK.addEventListener("click", () => { window.open("../../Quiz_MultipleChoice/multipleChoiceOK.html?json=bauernhofMultipleChoice.json", "_self") });
 dragNDrop.addEventListener("click", () => { window.open("../../DragAndDrop/DragAndDrop.html?json1=DragAndDropWassertiere.json&json2=KategorienWassertiere.json", "_self") });
 }
