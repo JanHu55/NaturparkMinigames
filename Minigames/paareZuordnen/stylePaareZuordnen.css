@@ -122,3 +122,11 @@ button {
     margin: -3px;
 
 }
+
+#description {
+
+    width: 75%;
+    margin: auto;
+    line-height: 24px;
+
+}

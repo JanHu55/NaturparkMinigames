@@ -128,3 +128,11 @@ img {
     width: 120px;
     /* border-radius: 12px; */
 }
+
+#description {
+
+    width: 75%;
+    margin: auto;
+    line-height: 24px;
+
+}
